@@ -2,6 +2,7 @@
 const queryString = window.location.search;
 var checksubmit = (urlParams.has('submit'));
 if (checksubmit === true) {
+$(".formy").hide()
 document.getElementById('formy').style.display = 'none';
 var media1 = urlParams.get('media1');
 var media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
@@ -21,6 +22,7 @@ document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
 }
 else if (checksubmit === false) {
+$(".medy").hide()
 document.getElementById('medy').style.display = 'none';
 }
 else {
