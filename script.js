@@ -1,7 +1,7 @@
 
 const queryString = window.location.search;
 var checksubmit = (urlParams.has('submit'));
-if (checksubmit === true) {
+if (checksubmit) {
 $(".formy").hide()
 document.getElementById('formy').style.display = 'none';
 var media1 = urlParams.get('media1');
@@ -21,11 +21,7 @@ document.getElementById('media2').src = media2;
 document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
 }
-else if (checksubmit === false) {
+else {
 $(".medy").hide()
 document.getElementById('medy').style.display = 'none';
-}
-else {
-document.getElementById('medy').style.display = 'none';
-document.getElementById('formy').style.display = 'none';
 }
