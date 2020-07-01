@@ -17,13 +17,10 @@ media1type = urlParams.get('media1type');
 media1type= decodeURIComponent(medi1type.replace(/\+/g, '%20') );
 media2type = urlParams.get('media2type');
 media2type= decodeURIComponent(media2type.replace(/\+/g, '%20') );
-
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
-
 document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
-  
 }
 else if (checksubmit == false) {
 document.getElementById("medy").style.display = "none";
