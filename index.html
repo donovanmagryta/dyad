@@ -6,17 +6,17 @@ const queryString = window.location.search;
 checksubmit = (urlParams.has('submit'));
 if (checksubmit) {
 document.getElementById("formy").style.display = "none";
-const media1 = urlParams.get('media1');
+media1 = urlParams.get('media1');
 media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
-const media2 = urlParams.get('media2');
+media2 = urlParams.get('media2');
 media2= decodeURIComponent(media2.replace(/\+/g, '%20') );
-const buttonlink= urlParams.get('buttonlink');
+buttonlink= urlParams.get('buttonlink');
 buttonlink= decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
-const buttontitle = urlParams.get('buttontitle');
+buttontitle = urlParams.get('buttontitle');
 buttontitle= decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
-const media1type = urlParams.get('media1type');
+media1type = urlParams.get('media1type');
 media1type= decodeURIComponent(medi1type.replace(/\+/g, '%20') );
-const media2type = urlParams.get('media2type');
+media2type = urlParams.get('media2type');
 media2type= decodeURIComponent(media2type.replace(/\+/g, '%20') );
 
 document.getElementById('media1').src = media1;
