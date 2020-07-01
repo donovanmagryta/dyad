@@ -1,9 +1,8 @@
 
 const queryString = window.location.search;
-var checksubmit = 'submit';
-//var checksubmit = (urlParams.has('submit'));
+var checksubmit = (urlParams.has('submit'));
 if (checksubmit === true) {
-document.getElementById("formy").style.display = "none";
+document.getElementById("formy").style.display = 'none';
 var media1 = urlParams.get('media1');
 var media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = urlParams.get('media2');
@@ -22,9 +21,9 @@ document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
 }
 else if (checksubmit === false) {
-document.getElementById("medy").style.display = "none";
+document.getElementById("medy").style.display = 'none';
 }
 else {
-document.getElementById("medy").style.display = "none";
-document.getElementById("formy").style.display = "none";
+document.getElementById("medy").style.display = 'none';
+document.getElementById("formy").style.display = 'none';
 }
