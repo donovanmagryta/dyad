@@ -1,0 +1,103 @@
+
+<html>
+<head>
+<script>
+const queryString = window.location.search;
+checksubmit = (urlParams.has('submit'));
+if (checksubmit) {
+document.getElementById("formy").style.display = "none";
+const media1 = urlParams.get('media1');
+media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
+const media2 = urlParams.get('media2');
+media2= decodeURIComponent(media2.replace(/\+/g, '%20') );
+const buttonlink= urlParams.get('buttonlink');
+buttonlink= decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
+const buttontitle = urlParams.get('buttontitle');
+buttontitle= decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
+const media1type = urlParams.get('media1type');
+media1type= decodeURIComponent(medi1type.replace(/\+/g, '%20') );
+const media2type = urlParams.get('media2type');
+media2type= decodeURIComponent(media2type.replace(/\+/g, '%20') );
+
+document.getElementById('media1').src = media1;
+document.getElementById('media2').src = media2;
+
+document.getElementById("butlink").value=buttonlink;
+document.getElementById("butbut").value=buttontitle;
+  
+}
+else {
+document.getElementById("medy").style.display = "none";
+}
+</script>
+</head>
+  <style>
+  html * { font-size: 60px !important; 
+      font-family:arial;
+      margin: 10px;
+  }
+  input { border: 2px solid black; }
+  body { font-size: x-large !important; 
+      font-family:arial;
+  }
+    
+@media screen and (orientation: portrait) {
+  video {
+    width: 100%;
+  }
+}
+
+
+@media screen and (orientation: landscape) {
+  video {
+    width: 49%;
+  }
+}
+  
+  </style>
+  <body>
+<div id="formy">
+  <form action="dynamicduo2.html"  method="GET" enctype="application/x-www-form-urlencoded">
+  <input type="url" name="media1" placeholder="media #1 link"/>
+  
+  <input type="url" name="media2" placeholder="media #2 link"/>
+  
+  <input type="url" name="buttonlink" placeholder="button link"/>
+  
+  <input type="text" name="buttontitle" placeholder="button label"/>
+  
+  <p>media #1 type:</p>
+  <select name="media1type" id="media1type">
+  <option value="video">video</option>
+  <option value="audio">audio</option>
+  <option value="image">image</option>
+  </select>
+  <p>media #2 type:</p>
+  <select name="media2type" id="media2type">
+  <option value="video">video</option>
+  <option value="audio">audio</option>
+  <option value="image">image</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit" name="submit">
+  </form>
+  <p><a href = "">Cross-promoting made simple.</a><a href=""> Compare opposing views side-by-side.</a><a href=""> Decentralize advertising.</a><a href=""> Unionize content sharers.</a></p></div>
+
+<div id="medy">
+
+      <div style="position:fixed;bottom:10px;right:10px;z-index:5;"><a href="" id="butlink><button id="butbut"  style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;">""</button></a><a href="https://tipscale.digital/dynamicduo.php"><button style="font-size:50px;background-color:navy;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;">New Duo</button></a></div>
+      <video id="media1" muted onmouseover="document.getElementById("media1").muted = false;" onmouseout="document.getElementById("media1").muted = true;" onmouseover="document.getElementById("media1").play = true;"
+      onmouseover="document.getElementById("media2").play = true;" autoplay="true" src="" autoplay> </video>
+      <video  id="media2" muted onmouseover="document.getElementById("media2").muted = false;" onmouseout="document.getElementById("media2").muted = true;" onmouseover="document.getElementById("media1").play = true;"
+      onmouseover="document.getElementById("media2").play = true;" autoplay="true" src="" autoplay> </video>
+      <p><a href = "">Cross-promoting made simple.</a><a href=""> Compare opposing views side-by-side.</a><a href=""> Decentralize advertising.</a><a href=""> Unionize content sharers.</a> - All with this simple web app.<br></p>
+      </div>
+
+</body></html>
+
+
+
+
+
+
+
