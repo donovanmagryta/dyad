@@ -1,7 +1,7 @@
 
 const queryString = window.location.search;
 var checksubmit = (urlParams.has('submit'));
-if (checksubmit == null) {
+if (checksubmit == True) {
 $(".formy").hide();
 document.getElementById('formy').style.display = 'none';
 var media1 = urlParams.get('media1');
