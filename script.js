@@ -1,9 +1,13 @@
 
 const queryString = window.location.search;
+alert('started');
 var checksubmit = (urlParams.has('submit'));
+alert ('checksubmit has');
 if (checksubmit) {
+alert ('checksubmit true');
 $(".formy").hide();
 $(".medy").show();
+alert('jquery ran');
 document.getElementById('formy').style.display = 'none';
 var media1 = urlParams.get('media1');
 var media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
@@ -23,6 +27,7 @@ document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
 }
 else {
+alert('else');
 $(".medy").hide();
 $(".formy").show()
 document.getElementById('medy').style.display = 'none';
