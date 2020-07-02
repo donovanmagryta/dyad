@@ -1,9 +1,9 @@
 
 const queryString = window.location.search;
 // alert('started'); true
-var arr = document.URL.match(/room=([0-9]+)/)
+var arr = document.URL.match(/submit=([0-9]+)/)
 var checksubmit = arr[1];
-alert('checksubmit has');
+alert(checksubmit);
 if (checksubmit) {
 alert('checksubmit true');
 $(".formy").hide();
