@@ -1,7 +1,8 @@
 
 const queryString = window.location.search;
 // alert('started'); true
-var checksubmit = URLParams.has('submit');
+var arr = document.URL.match(/room=([0-9]+)/)
+var checksubmit = arr[1];
 alert('checksubmit has');
 if (checksubmit) {
 alert('checksubmit true');
