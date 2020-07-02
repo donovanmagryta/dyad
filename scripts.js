@@ -1,7 +1,7 @@
 
 const queryString = window.location.search;
 // alert('started'); true
-var checksubmit = (URLSearchParams.has('submit'));
+var checksubmit = URLSearchParams.has('submit');
 alert('checksubmit has');
 if (checksubmit) {
 alert('checksubmit true');
