@@ -1,10 +1,10 @@
 
 const queryString = window.location.search;
-alert('started');
+// alert('started'); true
 var checksubmit = (urlParams.has('submit'));
-alert ('checksubmit has');
+alert('checksubmit has');
 if (checksubmit) {
-alert ('checksubmit true');
+alert('checksubmit true');
 $(".formy").hide();
 $(".medy").show();
 alert('jquery ran');
