@@ -47,7 +47,7 @@ alert("media2:");
 alert(media2);
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
-document.getElementById("buttonlink").value=buttonlink;
+document.getElementById("buttonlink").innerHTML=buttonlink;
 document.getElementById("buttontitle").value=buttontitle;
 }
 //}
