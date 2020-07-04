@@ -1,14 +1,11 @@
-
-const queryString = window.location.search;
-// alert('started'); true
 var arr = document.URL.match(/submit=([0-9]+)/);
 var checksubmit = arr[1];
-alert(checksubmit);
+//alert(checksubmit);
 if (checksubmit) {
-alert('checksubmit true');
+//alert("checksubmit true");
 $(".formy").hide();
 $(".medy").show();
-alert('jquery ran');
+alert("jquery ran");
 document.getElementById('formy').style.display = 'none';
 var media1 = urlParams.get('media1');
 var media1= decodeURIComponent(media1.replace(/\+/g, '%20') );
@@ -28,7 +25,7 @@ document.getElementById("butlink").value=buttonlink;
 document.getElementById("butbut").value=buttontitle;
 }
 else {
-alert('else');
+alert("else");
 $(".medy").hide();
 $(".formy").show()
 document.getElementById('medy').style.display = 'none';
