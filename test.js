@@ -11,8 +11,7 @@ var query = window.location.search.substring(1);
 var media = getQueryVariable("media");
 alert(media);
 var checksubmit = getQueryVariable("submit");
-alert(submit);
-if (submit) {
+alert(checksubmit);
 //var arr = document.URL.match(/submit=([0-9]+)/);
 //if (arr) {
 //var checksubmit = arr[1];
@@ -30,7 +29,7 @@ var media = decodeURIComponent(media.replace(/\+/g, '%20') );
 alert(media);
 document.getElementById('media').src = media;
 }
-}
+//}
 else {
  alert("checksubmit not in url query");
  jQuery(document).ready(function(){
