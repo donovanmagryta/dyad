@@ -48,7 +48,7 @@ alert(media2);
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
 var t = "<a href='" + buttonlink + "'>" + buttontitle + "</a>";
-document.getElementById("button").innerHTML = t;
+document.getElementById(button1).innerHTML = t;
 //document.getElementById("buttonlink").innerHTML = buttonlink;
 //document.getElementById("buttontitle").innerHTML = buttontitle;
 }
