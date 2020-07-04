@@ -1,7 +1,7 @@
 var arr = document.URL.match(/submit=([0-9]+)/);
 if (arr) {
 var checksubmit = arr[1];
-if (checksubmit === "submit") {
+if (checksubmit) {
 alert("checksubmit sent");
 alert(checksubmit);
 jQuery(document).ready(function(){
