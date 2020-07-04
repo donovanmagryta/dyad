@@ -9,9 +9,9 @@ var query = window.location.search.substring(1);
 }
 
 var media = getQueryVariable("media");
-alert(media);
+//alert(media);
 var checksubmit = getQueryVariable("submit");
-alert(checksubmit);
+//alert(checksubmit);
 //var arr = document.URL.match(/submit=([0-9]+)/);
 //if (arr) {
 //var checksubmit = arr[1];
@@ -24,8 +24,9 @@ jQuery(".media").show();
  });
 //var media = document.URL.match(/media=([0-9]+)/);
 //var media = media[1];
-alert(media);
+//alert(media);
 var media = decodeURIComponent(media.replace(/\+/g, '%20') );
+alert("url decoded media sent");
 alert(media);
 document.getElementById('media').src = media;
 }
