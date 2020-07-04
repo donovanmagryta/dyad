@@ -28,7 +28,7 @@ jQuery(".media").show();
 var media = decodeURIComponent(media.replace(/\+/g, '%20') );
 alert("url decoded media sent");
 alert(media);
-document.getElementById('media').src = media;
+document.getElementById('media1').src = media;
 }
 //}
 else {
