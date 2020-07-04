@@ -24,8 +24,10 @@ if (checksubmit) {
 //alert("checksubmit is:");
 //alert(checksubmit);
 jQuery(document).ready(function(){
-jQuery(".form").hide();
-jQuery(".media").show();
+//jQuery(".form").hide();
+//jQuery(".media").show();
+jQuery(".formy").show();
+ jQuery(".medy").hide();
  });
 //var media = document.URL.match(/media=([0-9]+)/);
 //var media = media[1];
@@ -45,7 +47,9 @@ document.getElementById("butbut").value=buttontitle;
 else {
  alert("no data submitted");
  jQuery(document).ready(function(){
- jQuery(".form").show();
- jQuery(".media").hide();
+ //jQuery(".form").show();
+// jQuery(".media").hide();
+ jQuery(".formy").show();
+ jQuery(".medy").hide();
   });
 }
