@@ -3,11 +3,13 @@ var checksubmit = arr[1];
 if (checksubmit) {
 alert("checksubmit sent");
 alert(checksubmit);
-$(".formy").hide();
-$(".medy").show();
+document.getElementById('formy').style.display = 'none';
+//$(".formy").hide();
+//$(".medy").show();
 }
 else {
 alert("checksubmit not in url query");
-$(".formy").show();
-$(".medy").hide();
+document.getElementById('medy').style.display = 'none';
+//$(".formy").show();
+//$(".medy").hide();
 }
