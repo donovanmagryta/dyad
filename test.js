@@ -3,7 +3,7 @@ if (arr) {
 var checksubmit = arr[1];
 if (checksubmit) {
 alert("checksubmit sent");
-// alert(checksubmit);
+alert(checksubmit);
 jQuery(document).ready(function(){
 jQuery(".form").hide();
 jQuery(".media").show();
