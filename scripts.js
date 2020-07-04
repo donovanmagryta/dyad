@@ -40,7 +40,7 @@ document.getElementById("butbut").value=buttontitle;
 }
 else {
 alert("else");
-$(".medy").hide();
-$(".formy").show()
+jQuery(".medy").hide();
+jQuery(".formy").show()
 document.getElementById('medy').style.display = 'none';
 }
