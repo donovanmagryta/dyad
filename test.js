@@ -36,6 +36,7 @@ var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 //alert("url decoded media is:");
 //alert(media);
 //var srca = document.getElementById("media1");
+var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 //srca.src = media;
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 document.getElementById('media1').src = media1;
