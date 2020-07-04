@@ -28,7 +28,9 @@ jQuery(".media").show();
 var media = decodeURIComponent(media.replace(/\+/g, '%20') );
 alert("url decoded media is:");
 alert(media);
-document.getElementById('media1').src = media;
+var med1="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4";
+document.getElementById('media1').src = med1;
+//document.getElementById('media1').src = media1;
 }
 //}
 else {
