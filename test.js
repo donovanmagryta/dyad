@@ -9,7 +9,9 @@ var query = window.location.search.substring(1);
 }
 
 var media = getQueryVariable("media");
+alert(media);
 var checksubmit = getQueryVariable("submit");
+alert(submit);
 
 //var arr = document.URL.match(/submit=([0-9]+)/);
 //if (arr) {
