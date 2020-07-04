@@ -1,8 +1,6 @@
 var arr = document.URL.match(/submit=([0-9]+)/);
-//var checksubmit = arr[1];
-//if (checksubmit) {
-var z = "set";
-if (z) {
+var checksubmit = arr[1];
+if (checksubmit) {
 alert("checksubmit sent");
 alert(checksubmit);
 $(document).ready(function(){
