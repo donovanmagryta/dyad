@@ -3,9 +3,9 @@ var checksubmit = arr[1];
 //alert(checksubmit);
 if (checksubmit) {
 //alert("checksubmit true");
-$(".formy").hide();
-$(".medy").show();
-alert("jquery ran");
+//$(".formy").hide();
+//$(".medy").show();
+//alert("jquery ran");
 document.getElementById('formy').style.display = 'none';
 var arrmed1 = document.URL.match(/media1=([0-9]+)/);
 var media1 = arrmed1[1];
