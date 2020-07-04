@@ -3,9 +3,9 @@ var checksubmit = arr[1];
 if (checksubmit) {
 alert("checksubmit sent");
 alert(checksubmit);
-$(document).ready(function(){
-$(".form").hide();
-$(".media").show();
+jQuery(document).ready(function(){
+jQuery(".form").hide();
+jQuery(".media").show();
  });
 var media = document.URL.match(/media=([0-9]+)/);
 var media = media[1];
@@ -14,8 +14,8 @@ document.getElementById('media').src = media;
 }
 else {
  alert("checksubmit not in url query");
- $(document).ready(function(){
- $(".form").show();
- $(".media").hide();
+ jQuery(document).ready(function(){
+ jQuery(".form").show();
+ jQuery(".media").hide();
   });
 }
