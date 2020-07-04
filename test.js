@@ -28,7 +28,8 @@ jQuery(".media").show();
 var media = decodeURIComponent(media.replace(/\+/g, '%20') );
 alert("url decoded media is:");
 alert(media);
-document.getElementById("media1").src = media;
+var srca = document.getElementById("media1");
+srca.src = media;
 }
 //}
 else {
