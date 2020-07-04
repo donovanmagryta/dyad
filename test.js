@@ -1,6 +1,6 @@
-var arr = document.URL.match(/media=([0-9]+)/);
+var arr = document.URL.match(/submit=([0-9]+)/);
 var checksubmit = arr[1];
-if (checksubmit) {
+if (checksubmit === "submit") {
 alert("checksubmit sent");
 alert(checksubmit);
 jQuery(document).ready(function(){
