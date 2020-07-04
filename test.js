@@ -26,8 +26,8 @@ if (checksubmit) {
 jQuery(document).ready(function(){
 //jQuery(".form").hide();
 //jQuery(".media").show();
-jQuery(".formy").show();
- jQuery(".medy").hide();
+jQuery(".formy").hide();
+ jQuery(".medy").show();
  });
 //var media = document.URL.match(/media=([0-9]+)/);
 //var media = media[1];
