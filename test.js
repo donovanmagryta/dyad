@@ -21,8 +21,8 @@ var checksubmit = getQueryVariable("submit");
 //if (arr) {
 //var checksubmit = arr[1];
 if (checksubmit) {
-alert("checksubmit is:");
-alert(checksubmit);
+//alert("checksubmit is:");
+//alert(checksubmit);
 jQuery(document).ready(function(){
 jQuery(".form").hide();
 jQuery(".media").show();
@@ -31,8 +31,8 @@ jQuery(".media").show();
 //var media = media[1];
 //alert(media);
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
-alert("url decoded media is:");
-alert(media);
+//alert("url decoded media is:");
+//alert(media);
 //var srca = document.getElementById("media1");
 //srca.src = media;
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
