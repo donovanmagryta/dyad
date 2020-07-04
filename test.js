@@ -22,7 +22,6 @@ alert("checksubmit not in url query");
     ///y.style.display = "block";
  // } else {
    //// y.style.display = "none";
-  }
 //document.getElementById('medy').style.display = 'none';
 $(document).ready(function(){
 $(".formy").show();
