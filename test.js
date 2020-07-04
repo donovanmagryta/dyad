@@ -12,7 +12,7 @@ var media = getQueryVariable("media");
 alert(media);
 var checksubmit = getQueryVariable("submit");
 alert(submit);
-
+if (submit) {
 //var arr = document.URL.match(/submit=([0-9]+)/);
 //if (arr) {
 //var checksubmit = arr[1];
