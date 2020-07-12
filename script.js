@@ -30,6 +30,15 @@ var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 }
 } // added 7-12-2020
+if (media1type == "youtube")  { // added 7-12-2020
+var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
+let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
+let id = media1.match(re)[7]; // added 7-12-2020
+//alert(id);
+var media1 = 'https://youtube.com/embed/' + id + '?autoplay=1';
+//alert(sourc);
+document.getElementById('ytmedia1').src = media1;
+}
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
