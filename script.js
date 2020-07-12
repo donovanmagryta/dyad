@@ -63,5 +63,6 @@ else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
  jQuery(".medy").hide();
+ jQuery(".yt").hide();
   });
 }
