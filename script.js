@@ -15,6 +15,7 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 if (checksubmit) {
+alert("submitted");
 if (media1type == "video"){ // added 7-12-2020
 alert("type is video");
 jQuery(document).ready(function(){
@@ -65,6 +66,7 @@ document.getElementById('ytmedia2').src = media2;
 }
 }
 else {
+ alert("form shown");
  jQuery(document).ready(function(){
  jQuery(".formy").show();
  jQuery(".medy").hide();
