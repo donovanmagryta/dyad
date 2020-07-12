@@ -16,6 +16,7 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 if (checksubmit) {
 if (media1type == "video"){ // added 7-12-2020
+alert("type is video");
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
 jQuery(".yt").hide();  
@@ -32,6 +33,7 @@ d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="fon
 }
 } // added 7-12-20
 if (media1type == "youtube")  { // added 7-12-2020
+alert("type is youtube");
 jQuery(document).ready(function(){
  jQuery(".formy").hide();
  jQuery(".medy").hide();
@@ -42,7 +44,7 @@ let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.
 let id = media1.match(re)[7]; // added 7-12-2020
 //alert(id);
 var media1 = 'https://youtube.com/embed/' + id + '?autoplay=1';
-//alert(sourc);
+//alert(media1);
 document.getElementById('ytmedia1').src = media1;
 }
 if (media2type == "youtube")  { // added 7-12-2020
