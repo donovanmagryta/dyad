@@ -46,13 +46,13 @@ let id = media1.match(re)[7]; // added 7-12-2020
 var media1 = 'https://youtube.com/embed/' + id + '?autoplay=1';
 //alert(media1);
 document.getElementById('ytmedia1').src = media1;
-}
-if (media2type == "youtube")  { // added 7-12-2020
-jQuery(document).ready(function(){
- jQuery(".formy").hide();
- jQuery(".medy").hide();
-  jQuery(".yt").show();
-  });
+//}
+//if (media2type == "youtube")  { // added 7-12-2020
+//jQuery(document).ready(function(){
+ //jQuery(".formy").hide();
+ //jQuery(".medy").hide();
+  //jQuery(".yt").show();
+  //});
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
 let id = media2.match(re)[7]; // added 7-12-2020
@@ -61,7 +61,7 @@ var media2 = 'https://youtube.com/embed/' + id + '?autoplay=1';
 //alert(sourc);
 document.getElementById('ytmedia2').src = media2;
 }
-}
+//}
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
