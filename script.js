@@ -21,6 +21,7 @@ jQuery(document).ready(function(){
 jQuery(".formy").hide();
 jQuery(".yt").hide();  
  jQuery(".medy").show();
+ jQuery(".but").show();
  });
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
@@ -38,6 +39,7 @@ jQuery(document).ready(function(){
  jQuery(".formy").hide();
  jQuery(".medy").hide();
   jQuery(".yt").show();
+  jQuery(".but").show();
   });
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
@@ -67,5 +69,6 @@ else {
  jQuery(".formy").show();
  jQuery(".medy").hide();
  jQuery(".yt").hide();
+ jQuery(".but").hide();
   });
 }
