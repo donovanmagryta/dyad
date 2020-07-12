@@ -63,7 +63,7 @@ var media2 = 'https://youtube.com/embed/' + id + '?autoplay=1';
 //alert(sourc);
 document.getElementById('ytmedia2').src = media2;
 }
-//}
+}
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
