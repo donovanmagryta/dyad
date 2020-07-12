@@ -18,6 +18,7 @@ if (checksubmit) {
 if (media1type == "video"){ // added 7-12-2020
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
+jQuery(".yt").hide();  
  jQuery(".medy").show();
  });
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
