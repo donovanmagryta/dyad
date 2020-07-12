@@ -15,6 +15,7 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 if (checksubmit) {
+if (media1type == "video"){ // added 7-12-2020
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
  jQuery(".medy").show();
@@ -28,6 +29,7 @@ document.getElementById('media2').src = media2;
 var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 }
+} // added 7-12-2020
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
