@@ -31,6 +31,11 @@ d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="fon
 }
 } // added 7-12-2020
 if (media1type == "youtube")  { // added 7-12-2020
+jQuery(document).ready(function(){
+ jQuery(".formy").hide();
+ jQuery(".medy").hide();
+  jQuery(".yt").show();
+  });
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
 let id = media1.match(re)[7]; // added 7-12-2020
