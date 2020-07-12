@@ -31,7 +31,7 @@ document.getElementById('media2').src = media2;
 var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 }
-} // added 7-12-20
+//} // moved lower 7-12-20
 if (media1type == "youtube")  { // added 7-12-2020
 alert("type is youtube");
 jQuery(document).ready(function(){
@@ -60,6 +60,7 @@ let id = media2.match(re)[7]; // added 7-12-2020
 var media2 = 'https://youtube.com/embed/' + id + '?autoplay=1';
 //alert(sourc);
 document.getElementById('ytmedia2').src = media2;
+}
 }
 else {
  jQuery(document).ready(function(){
