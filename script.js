@@ -33,7 +33,7 @@ var d2 = document.getElementById('button2');
 d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
 else if (media1type == "youtube") {
-alert("case 2 yt");
+alert("case 2 youtube");
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
  jQuery(".medy").hide();
