@@ -33,7 +33,18 @@ jQuery(document).ready(function(){
 jQuery(".formy").hide();
  jQuery(".medy").hide();
  jQuery(".yt").show();
- });      
+ });
+let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
+let idone = media1.match(re)[7]; // added 7-12-2020
+//alert(id);
+var media1 = 'https://youtube.com/embed/' + idone + '?autoplay=1';
+//alert(media1);
+document.getElementById('yt1').src = media1;
+let idtwo = media2.match(re)[7]; // added 7-12-2020
+//alert(id);
+var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
+//alert(media2);
+document.getElementById('yt2').src = media2;
 }
 }
 else {
