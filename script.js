@@ -27,8 +27,8 @@ jQuery(".formy").hide();
  });
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
-var d1 = document.getElementById('button1');
-d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+var d2 = document.getElementById('button2');
+d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
 if (media1type == "youtube") {
 jQuery(document).ready(function(){
