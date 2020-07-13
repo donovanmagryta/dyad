@@ -43,10 +43,18 @@ input[type=submit]:hover {
   video {
     width: 100%;
   }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (orientation: landscape) {
   video {
     width: 49%;
+  }
+  iframe { 
+  width: 49%;
+  height: auto;
   }
 }
  </style>
@@ -78,6 +86,13 @@ input[type=submit]:hover {
   <input type="submit" value="Submit" name="submit">
   </form>
   </div>
+  <div class="yt">
+    <div style="position:fixed;bottom:10px;right:10px;z-index:5;"><div id="button1"> </div><a href="https://donovanmagryta.github.io/dynamicduo/index.html"><button style="font-size:50px;background-color:navy;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;">New Duo</button></a></div>
+     <iframe id="yt1" src="">
+    </iframe>
+    <iframe id="yt2" src="">
+    </iframe>
+    </div>
  <div class="medy">
  <div style="position:fixed;bottom:10px;right:10px;z-index:5;"><div id="button1"> </div><a href="https://donovanmagryta.github.io/dynamicduo/index.html"><button style="font-size:50px;background-color:navy;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;">New Duo</button></a></div>
       <video id="media1" muted loop onmouseover="document.getElementById('media1').muted = false;" onmouseout="document.getElementById('media1').muted = true;" onmouseover="document.getElementById('media1').play = true;"
