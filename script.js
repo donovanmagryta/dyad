@@ -46,6 +46,8 @@ let idtwo = media2.match(re)[7]; // added 7-12-2020
 var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
 //alert(media2);
 document.getElementById('yt2').src = media2;
+var d1 = document.getElementById('button1');
+d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 }
 }
 else {
