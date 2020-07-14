@@ -1,1 +1,2 @@
-# bundled media sharing. Alternative to content creator unions.
+# Bundled media sharing. 
+# Alternative to content creator unions.
