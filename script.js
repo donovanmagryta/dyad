@@ -30,7 +30,7 @@ jQuery(".formy").hide();
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
 var d2 = document.getElementById('button2');
-d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:red;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="font-size:50px;background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
 else if (media1type == "youtube") {
 //alert("case 2 youtube");
