@@ -107,10 +107,10 @@ input[type=submit]:hover {
     </div>
  <div class="medy">
  <div style="position:fixed;bottom:10px;right:10px;z-index:5;"><div id="button2"> </div><a href="https://donovanmagryta.github.io/dynamicduo/index.html"><button style="background-color:#36CBD9;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:25%; text-decoration:none;"><b>+</b></button></a></div>
-      <video id="media1" muted loop controls onmouseover="document.getElementById('media1').muted = false;" onmouseout="document.getElementById('media1').muted = true;" onplay="document.getElementById('media1').autoplay = true;"
+      <video id="media1" muted loop controls onmouseover="document.getElementById('media1').muted = false;" onmouseout="document.getElementById('media1').muted = true;" onpause="document.getElementById('media2').pause = true;" onplay="document.getElementById('media1').autoplay = true;"
       onplay="document.getElementById('media2').autoplay = true;" autoplay="true" src="" autoplay> </video>
-      <video  id="media2" muted loop controls onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;" onplay="document.getElementById('media1').autoplay = true;"
-      onplay="document.getElementById('media2').autoplay = true;" autoplay="true" src="" autoplay> </video>
+      <video  id="media2" muted loop controls onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;" onplay="document.getElementById('media1').autoplay = true;" 
+      onplay="document.getElementById('media2').autoplay = true;" onpause="document.getElementById('media1').pause = true;"  autoplay="true" src="" autoplay> </video>
       </div>
      <script src="script.js"></script>
 </body>
