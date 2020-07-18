@@ -65,11 +65,9 @@ else {
 
 function playVid() {
 document.querySelectorAll("video").forEach(vid => vid.play());
-var vide = getElementsByTagName('video');
-video.removeAttribute('controls');
+document.getElementsByTagName('video').removeAttribute('controls');
 }
 function pauseVid() {
 document.querySelectorAll("video").forEach(vid => vid.pause());
-var vide = getElementsByTagName('video');
-video.removeAttribute('controls');
+document.getElementsbyTagName('video').removeAttribute('controls');
 }
