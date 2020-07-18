@@ -2,8 +2,5 @@
 # Bundled media sharing. 
 # Alternative to digital media creator unions.
 
-✅MP4 Media Support:
-  ✅Chrome:
-    ✅ Android
-    ✅Windows 10
+✅MP4 Media Support - Google Chrome on Android & Windows 10
   
