@@ -65,11 +65,11 @@ else {
 
 function playVid() {
 document.querySelectorAll("video").forEach(vid => vid.play());
-video=getElementsByTagName('video');
+var vide = getElementsByTagName('video');
 video.removeAttribute('controls');
 }
 function pauseVid() {
 document.querySelectorAll("video").forEach(vid => vid.pause());
-video=getElementsByTagName('video');
+var vide = getElementsByTagName('video');
 video.removeAttribute('controls');
 }
