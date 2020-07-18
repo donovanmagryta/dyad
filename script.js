@@ -62,3 +62,10 @@ else {
   });
  //alert("case 3");
 }
+
+function playVid() { 
+document.querySelectorAll("video").forEach(vid => vid.play());
+}
+function pauseVid() {
+document.querySelectorAll("video").forEach(vid => vid.pause());
+}
