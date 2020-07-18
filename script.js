@@ -65,11 +65,16 @@ d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="bac
   const players = [];
        
        
-   function mute(){ //need to modify for either/or not both videos
-    players.forEach(function(p){
-      p.playVideo();
-    })
-  }
+  // function mute(media1,media2){ //need to modify for either/or not both videos
+   const z = document.querySelector('media2');
+   const v = document.querySelector('media1');
+z.onmouseover = player.mute(media1);
+z.onmouseout = player.unmute(media2);
+v.onmouseover = player.mute(media2);
+v.onmouseout = player.unmute(media1);
+  //}
+       
+    
   
   function playAll(){
     players.forEach(function(p){
