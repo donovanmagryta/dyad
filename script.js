@@ -52,67 +52,6 @@ var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
 var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 // added 7-18-2020
- // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  const video_container = document.getElementById('video_container');
-  const videos = [media1, media2];
-
-
-  const players = [];
-       
-       
-  // function mute(media1,media2){ //need to modify for either/or not both videos
-   const z = document.querySelector(video_container)[0];
-   const v = document.querySelector(video_container)[1];
-z.onmouseover = player.mute()[0];
-z.onmouseout = player.unmute()[1];
-v.onmouseover = player.mute()[1];
-v.onmouseout = player.unmute()[0];
-  //}
-       
-    
-  
-  function playAll(){
-    players.forEach(function(p){
-      p.playVideo();
-    })
-  }
-
-  function pauseAll(){
-    players.forEach(function(p){
-      p.stopVideo();
-    })
-  }
-
-  function state_changed(e) {
-    console.log('state changed', e)
-    // PLAYING
-    if(e.data === 1) {
-      playAll();
-    } 
-    // PAUSED
-    if(e.data === 2){
-      pauseAll();
-    }
-  }
-
-
-  function onYouTubePlayerAPIReady() {
-    videos.forEach(function(v){
-      const el = document.createElement('div');
-      video_container.append(el);
-      const player = new YT.Player(el, {
-        videoId: v,
-        events: {
-          onStateChange: state_changed,
-        },
-      });
-      players.push(player);
-    });
 // added 7-18-2020      
        
 }
