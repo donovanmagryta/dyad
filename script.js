@@ -63,9 +63,13 @@ else {
  //alert("case 3");
 }
 
-function playVid() { 
+function playVid() {
 document.querySelectorAll("video").forEach(vid => vid.play());
+video=getElementsByTagName('video');
+video.removeAttribute('controls');
 }
 function pauseVid() {
 document.querySelectorAll("video").forEach(vid => vid.pause());
+video=getElementsByTagName('video');
+video.removeAttribute('controls');
 }
