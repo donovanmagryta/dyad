@@ -18,6 +18,26 @@ function pauseAll() {
     player1.pauseVideo();
     player2.pauseVideo();
 }
+function checkPlay() {
+  var stat1 = player1.getPlayerState():Number
+  var stat2 = player2.getPlayerState():Number
+  if stat1 === "2" {
+    player1.pauseVideo();
+    player2.pauseVideo();
+  }
+  else if stat1 === "1" {
+    player1.playVideo();
+    player2.playVideo();
+    }
+   if stat2 === "2" {
+    player1.pauseVideo();
+    player2.pauseVideo();
+  }
+  else if stat2 === "1" {
+    player1.playVideo();
+    player2.playVideo();
+    }
+}
 </script>
   </body>
 </html>
