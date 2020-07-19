@@ -81,7 +81,17 @@ function onoff(element)
     }
 }
 */
+ function checkIfPlaying(){
+        var playerStatus = player1.getPlayerState();
 
+         //return  playerStatus == 1;
+         if (playerStatus == "-1" or "2") {
+           alert('paused or unstarted');
+         }
+   if (playerStatus == "1") {
+           alert('playing');
+         }
+      } 
 </script>
   </body>
 </html>
