@@ -3,7 +3,9 @@
 # Alternative to digital media creator unions.
 # Compare perspectives side-by-side.
 
-✔️ MP4 media support on Google Chrome
+✔️ MP4 media supported on Google Chrome
 
-👷‍♀️ YouTube media support under construction.
+✔️ YouTube media supported on Google Chrome for Desktop
+
+👷‍♀️ YouTube media support on Google Chrome for Mobile under construction.
   
