@@ -7,7 +7,17 @@
   <script src="https://www.youtube.com/player_api"></script>
 </head>
 <body>
-  <iframe onload="player1=new YT.Player(this)" onpause="player2.pauseVideo()" onplay="player2.playVideo();" onmouseover="player1.unMute()" onmouseout="player1.mute()" src="https://www.youtube.com/embed/bKZbvluHcNo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
-  <iframe onload="player2=new YT.Player(this)" onpause="player1.pauseVideo();" onplay="player1.playVideo();" onmouseover="player2.unMute()" onmouseout="player2.mute()" src="https://www.youtube.com/embed/OsLap6ZNNQo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
-</body>
+  <iframe onload="player1=new YT.Player(this)" onpause="pauseAll()" onplay="playAll()" onmouseover="player1.unMute()" onmouseout="player1.mute()" src="https://www.youtube.com/embed/bKZbvluHcNo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
+  <iframe onload="player2=new YT.Player(this)" onpause="pauseAll()" onplay="playAll()" onmouseover="player2.unMute()" onmouseout="player2.mute()" src="https://www.youtube.com/embed/OsLap6ZNNQo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
+<script>
+  function playAll() {
+    player1.playVideo()
+    player2.playVideo()
+  }
+  function pauseAll() {
+    player1.pauseVideo()
+    player2.pauseVideo()
+  }
+  </script>
+  </body>
 </html>
