@@ -19,7 +19,7 @@ function pauseAll() {
     player1.pauseVideo();
     player2.pauseVideo();
 }
-function checkPlay() {
+// function checkPlay() {
   /*
   function state_changed(e) {
     console.log('state changed', e)
@@ -33,7 +33,31 @@ function checkPlay() {
     }
   }
   */
-  var stat1 = player1.getPlayerState();
+
+
+var buttonstate=0;
+function onoff(element)
+{
+  buttonstate= 1 - buttonstate;
+  var blabel;
+  if(buttonstate)
+  {
+    blabel="Play";
+    player1.pauseVideo();
+    player2.pauseVideo();
+  }
+  else
+  {
+    blabel="Pause";
+    player1.playVideo();
+    player2.playVideo();
+  }
+  var child=element.firstChild;
+  child.innerHTML=blabel;
+}
+
+
+  /* var stat1 = player1.getPlayerState();
    var stat2 = player2.getPlayerState();
   if stat1 === "2" {
     alert('paused');
@@ -56,7 +80,7 @@ function checkPlay() {
     player2.playVideo();
     }
 }
-
+*/
 
 </script>
   </body>
