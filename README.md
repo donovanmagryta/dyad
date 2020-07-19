@@ -3,9 +3,27 @@
 * Override algorithmic filtering via bundled media sharing.
 * Compare perspectives side-by-side.
 
-✔️ MP4 media supported on Google Chrome for desktop & mobile.
+| WINDOWS 10         | Chrome | FireFox | Edge | Safari |
+|--------------------|--------|---------|------|--------|
+| MP4,WEBM           | ✔      |         | ✔    |        |
+| YouTube            | ✔      |         | ✔    |        |
+| MP3,WAV            |        |         |      |        |
+| JPG,PNG,GIF        |        |         |      |        |
 
-✔️ YouTube media supported on Google Chrome for desktop.
 
-👷‍♀️ YouTube media support on Google Chrome for mobile under construction.
+
+| ANDROID 9   | Chrome | FireFox | Edge | Safari |
+|-------------|--------|---------|------|--------|
+| MP4,WEBM    | ✔      |         |      |        |
+| YouTube     |        |         |      |        |
+| MP3,WAV     |        |         |      |        |
+| JPG,PNG,GIF |        |         |      |        |
+
+
+| iOS 13      | Chrome | FireFox | Edge | Safari |
+|-------------|--------|---------|------|--------|
+| MP4,WEBM    |        |         |      |        |
+| YouTube     |        |         |      |        |
+| MP3,WAV     |        |         |      |        |
+| JPG,PNG,GIF |        |         |      |        |
   
