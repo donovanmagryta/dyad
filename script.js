@@ -33,7 +33,7 @@ var d2 = document.getElementById('button2');
 d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
 else if (media1type == "youtube") {
-alert("case 2 youtube");
+//alert("case 2 youtube");
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
  jQuery(".medy").hide();
@@ -41,12 +41,12 @@ jQuery(".formy").hide();
  });
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
 let idone = media1.match(re)[7]; // added 7-12-2020
-alert(idone);
+//alert(idone);
 //var media1 = 'https://youtube.com/embed/' + idone + '?autoplay=1';
 //alert(media1);
 //document.getElementById('yt1').src = media1;
 let idtwo = media2.match(re)[7]; // added 7-12-2020
-alert(idtwo);
+//alert(idtwo);
 //var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
 //alert(media2);
 //document.getElementById('yt2').src = media2;
@@ -130,33 +130,6 @@ function onPlayerStateChange(event) {
 function onPlayerReady(event) {
   event.target.playVideo();
 }
-
- 
-  
-  //
-/*  var buttonstate=0;
-function onoff(element) {
-  buttonstate= 1 - buttonstate;
-  var blabel;
-  if(buttonstate)
-  {
-    blabel="Play";
-    player1.pauseVideo();
-    player2.pauseVideo();
-  }
-  else
-  {
-    blabel="Pause";
-    player1.playVideo();
-    player2.playVideo();
-  }
-  var child=element.firstChild;
-  child.innerHTML=blabel;
-}
-// added 7-18-2020      
-       
-}
-*/
 }       
 }
        
