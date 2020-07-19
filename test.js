@@ -48,7 +48,7 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
   player2.playVideo();
   player1.playVideo();
-    document.getElementById('playButton').innerHTML = 'Pause';
+    //document.getElementById('playButton').innerHTML = 'Pause';
 
     // Set the onclick event to the button for pause the YouTube video.
     document.getElementById('player1').onmouseover = function() {
@@ -66,7 +66,7 @@ function onPlayerStateChange(event) {
   // If the video is PAUSED, set the onclick element for pause the video.
   // Once the "playButton" is clicked, the video will resume the video = continue playing the video.
   if (event.data == YT.PlayerState.PAUSED) {
-    document.getElementById('playButton').innerHTML = 'Play';
+    //document.getElementById('playButton').innerHTML = 'Play';
     //document.getElementById('playButton').onmouseout = function() {
       player2.pauseVideo();
       player1.pauseVideo();
