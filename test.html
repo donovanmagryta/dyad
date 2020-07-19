@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>New Feature Testing</title>
   <script src="https://www.youtube.com/player_api"></script>
-</head>
-<body>
-  <iframe onload="player1=new YT.Player(this)" onpause="pauseVid()" onplay="playVid()" omouseover="player1.unMute()" onmouseout="player1.mute()" src="https://www.youtube.com/embed/bKZbvluHcNo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
-  <iframe onload="player2=new YT.Player(this)" onpause="pauseVid()" onplay="playVid()" onmouseover="player2.unMute()" onmouseout="player2.mute()" src="https://www.youtube.com/embed/OsLap6ZNNQo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
-<script>
+  <script>
   function pauseVid() {
     player1.pauseVideo();
     player2.pauseVideo();
@@ -19,6 +15,11 @@
     player2.playVideo();
   }
   </script>
+
+</head>
+<body>
+  <iframe onload="player1=new YT.Player(this)" onpause="pauseVid()" onplay="playVid()" onmouseover="player1.unMute()" onmouseout="player1.mute()" src="https://www.youtube.com/embed/bKZbvluHcNo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
+  <iframe onload="player2=new YT.Player(this)" onpause="pauseVid()" onplay="playVid()" onmouseover="player2.unMute()" onmouseout="player2.mute()" src="https://www.youtube.com/embed/OsLap6ZNNQo?html5=1&enablejsapi=1&autoplay=0&rel=0&showinfo=0&modestbranding=1&controls=1&autohide=0&vq=large"> </iframe>
 
 </body>
 </html>
