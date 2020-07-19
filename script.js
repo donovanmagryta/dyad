@@ -66,8 +66,8 @@ function onYouTubeIframeAPIReady() {
 
   // Div player:
   player1 = new YT.Player('player1', {
-    height: '1080',
-    width: '1920',
+    //height: '360',
+    //width: '640',
     videoId: idone,
     events: {
       'onReady': onPlayerReady,
@@ -76,8 +76,8 @@ function onYouTubeIframeAPIReady() {
   });
   
   player2 = new YT.Player('player2', {
-    height: '1080',
-    width: '1920',
+    //height: '360',
+    //width: '640',
     videoId: idtwo,
     events: {
       'onReady': onPlayerReady,
