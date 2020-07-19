@@ -1,11 +1,11 @@
 # Dyad
-* Easy cross-promotions.
+* Cross-promoting for the masses.
 * Override algorithmic filtering via bundled media sharing.
 * Compare perspectives side-by-side.
 
-✔️ MP4 media supported on Google Chrome for Desktop & Mobile.
+✔️ MP4 media supported on Google Chrome for desktop & mobile.
 
-✔️ YouTube media supported on Google Chrome for Desktop.
+✔️ YouTube media supported on Google Chrome for desktop.
 
-👷‍♀️ YouTube media support on Google Chrome for Mobile under construction.
+👷‍♀️ YouTube media support on Google Chrome for mobile under construction.
   
