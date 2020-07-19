@@ -41,18 +41,19 @@ jQuery(".formy").hide();
  });
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
 let idone = media1.match(re)[7]; // added 7-12-2020
+alert(idone);
 //var media1 = 'https://youtube.com/embed/' + idone + '?autoplay=1';
 //alert(media1);
 //document.getElementById('yt1').src = media1;
 let idtwo = media2.match(re)[7]; // added 7-12-2020
-//alert(id);
+alert(idtwo);
 //var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
 //alert(media2);
 //document.getElementById('yt2').src = media2;
 var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 // added 7-18-2020
-         var tag = document.createElement('script');
+var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -65,8 +66,8 @@ function onYouTubeIframeAPIReady() {
 
   // Div player:
   player1 = new YT.Player('player1', {
-    height: 'auto',
-    width: '49%',
+    height: '360',
+    width: '640',
     videoId: idone,
     events: {
       'onReady': onPlayerReady,
@@ -75,8 +76,8 @@ function onYouTubeIframeAPIReady() {
   });
   
   player2 = new YT.Player('player2', {
-    height: 'auto',
-    width: '49%',
+    height: '360',
+    width: '640',
     videoId: idtwo,
     events: {
       'onReady': onPlayerReady,
