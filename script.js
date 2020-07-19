@@ -41,22 +41,124 @@ jQuery(".formy").hide();
  });
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
 let idone = media1.match(re)[7]; // added 7-12-2020
-var media1 = 'https://youtube.com/embed/' + idone + '?autoplay=1';
+//var media1 = 'https://youtube.com/embed/' + idone + '?autoplay=1';
 //alert(media1);
 //document.getElementById('yt1').src = media1;
 let idtwo = media2.match(re)[7]; // added 7-12-2020
 //alert(id);
-var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
+//var media2 = 'https://youtube.com/embed/' + idtwo + '?autoplay=1';
 //alert(media2);
 //document.getElementById('yt2').src = media2;
 var d1 = document.getElementById('button1');
 d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 // added 7-18-2020
+         var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Variables of the divs (where the YouTube iframe will load):
+var player1;
+var player2;
+
+function onYouTubeIframeAPIReady() {
+
+  // Div player:
+  player1 = new YT.Player('player1', {
+    height: 'auto',
+    width: '49%',
+    videoId: idone,
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+  
+  player2 = new YT.Player('player2', {
+    height: 'auto',
+    width: '49%',
+    videoId: idtwo,
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+
+  // After loading the iframe, set the "playVideo" onclick event on "playButton" anchor element.
+  ///document.getElementById('playButton').onclick = function() {
+   // player1.playVideo();
+ // };
+
+}
+
+// 5. The API calls this function when the player's state changes.
+function onPlayerStateChange(event) {
+
+  // If the video is PLAYING, set the onclick element for pause the video.
+  // Once the "playButton" is clicked, the video will be paused.
+  if (event.data == YT.PlayerState.PLAYING) {
+  player2.playVideo();
+  player1.playVideo();
+    //document.getElementById('playButton').innerHTML = 'Pause';
+
+    // Set the onclick event to the button for pause the YouTube video.
+    document.getElementById('player1').onmouseover = function() {
+     player1.unMute();
+      player2.mute();
+    //};
+  }
+  
+  document.getElementById('player2').onmouseover = function() {
+      player2.unMute();
+      player1.mute();
+    };
+  }
+
+  // If the video is PAUSED, set the onclick element for pause the video.
+  // Once the "playButton" is clicked, the video will resume the video = continue playing the video.
+  if (event.data == YT.PlayerState.PAUSED) {
+    //document.getElementById('playButton').innerHTML = 'Play';
+    //document.getElementById('playButton').onmouseout = function() {
+      player2.pauseVideo();
+      player1.pauseVideo();
+    //};
+  }
+}
+
+// Div "player" - The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+ 
+  
+  //
+/*  var buttonstate=0;
+function onoff(element) {
+  buttonstate= 1 - buttonstate;
+  var blabel;
+  if(buttonstate)
+  {
+    blabel="Play";
+    player1.pauseVideo();
+    player2.pauseVideo();
+  }
+  else
+  {
+    blabel="Pause";
+    player1.playVideo();
+    player2.playVideo();
+  }
+  var child=element.firstChild;
+  child.innerHTML=blabel;
+}
 // added 7-18-2020      
        
 }
-
+*/
+       
 }
+       
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
