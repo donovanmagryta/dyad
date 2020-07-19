@@ -16,7 +16,7 @@ function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('player1', {
     height: '360',
     width: '640',
-    videoId: 'M7lc1UVf-VE',
+    videoId: 'OsLap6ZNNQo',
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -26,7 +26,7 @@ function onYouTubeIframeAPIReady() {
   player2 = new YT.Player('player2', {
     height: '360',
     width: '640',
-    videoId: 'M7lc1UVf-VE',
+    videoId: 'bKZbvluHcNo',
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
