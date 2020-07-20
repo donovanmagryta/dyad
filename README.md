@@ -14,11 +14,17 @@
 | ANDROID 9   | Chrome | FireFox | Edge | Safari |
 |-------------|--------|---------|------|--------|
 | MP4,WEBM    | ✔     | ✔       |   ✔  | N/A    |
-| YouTube     |        |         |      |        |
-| JPG,PNG,GIF | ✔      | ✔      | ✔    |  ✔    |
+| YouTube     |        |         |      |  N/A      |
+| JPG,PNG,GIF | ✔      | ✔      | ✔    |  N/A    |
 
 
 | iOS 13      | Chrome | FireFox | Edge | Safari |
+|-------------|--------|---------|------|--------|
+| MP4,WEBM    |        |         |      |        |
+| YouTube     |        |         |      |        |
+| JPG,PNG,GIF |        |         |      |        |
+
+| MAC OSX CATALINA  | Chrome | FireFox | Edge | Safari |
 |-------------|--------|---------|------|--------|
 | MP4,WEBM    |        |         |      |        |
 | YouTube     |        |         |      |        |
