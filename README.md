@@ -5,18 +5,16 @@
 
 | WINDOWS 10         | Chrome | FireFox | Edge | Safari |
 |--------------------|--------|---------|------|--------|
-| MP4,WEBM           | ✔      |         | ✔    |        |
-| YouTube            | ✔      |         | ✔    |        |
-| MP3,WAV            |        |         |      |        |
-| JPG,PNG,GIF        |        |         |      |        |
+| MP4,WEBM           | ✔      |  ✔     | ✔    | N/A    |
+| YouTube            | ✔      | ✔      | ✔    | N/A    |
+| JPG,PNG,GIF        | ✔      | ✔      | ✔    | N/A    |
 
 
 
 | ANDROID 9   | Chrome | FireFox | Edge | Safari |
 |-------------|--------|---------|------|--------|
-| MP4,WEBM    | ✔      |         |      |        |
+| MP4,WEBM    | ✔     | ✔       |   ✔  | N/A    |
 | YouTube     |        |         |      |        |
-| MP3,WAV     |        |         |      |        |
 | JPG,PNG,GIF |        |         |      |        |
 
 
@@ -24,6 +22,5 @@
 |-------------|--------|---------|------|--------|
 | MP4,WEBM    |        |         |      |        |
 | YouTube     |        |         |      |        |
-| MP3,WAV     |        |         |      |        |
 | JPG,PNG,GIF |        |         |      |        |
   
