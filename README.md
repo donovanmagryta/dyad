@@ -24,7 +24,7 @@
 | YouTube     |        |         |      |        |
 | JPG,PNG,GIF |        |         |      |        |
 
-| MAC OSX CATALINA  | Chrome | FireFox | Edge | Safari |
+| MACOS 10  | Chrome | FireFox | Edge | Safari |
 |-------------|--------|---------|------|--------|
 | MP4,WEBM    |        |         |      |        |
 | YouTube     |        |         |      |        |
