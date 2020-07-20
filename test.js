@@ -1,4 +1,4 @@
-// javascript for test.html
+// javascript for test.html (new feature testing webpage)
 
 
   var tag = document.createElement('script');
