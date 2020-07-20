@@ -15,7 +15,7 @@
 |-------------|--------|---------|------|--------|
 | MP4,WEBM    | ✔     | ✔       |   ✔  | N/A    |
 | YouTube     |        |         |      |        |
-| JPG,PNG,GIF |        |         |      |        |
+| JPG,PNG,GIF | ✔      | ✔      | ✔    |  ✔    |
 
 
 | iOS 13      | Chrome | FireFox | Edge | Safari |
