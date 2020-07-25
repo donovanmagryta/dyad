@@ -7,10 +7,12 @@ var currentURL = window.location.href;
 
   // jQuery methods go here...
 
-jQuery.get("https://api.urlday.com/short?url="+currentURL+"", function(data, result){
+jQuery.get("https://api.urlday.com/short?url="+currentURL+"", function(data, status){
                                       alert("Data: " + data);
-alert(JSON.stringify(data));
-alert(JSON.stringify(result));
+obj = JSON.parse(data);
+    alert(obj.result);
+//alert(JSON.stringify(data));
+//alert(JSON.stringify(result));
                               });
                             
 });                            
