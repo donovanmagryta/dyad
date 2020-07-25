@@ -10,6 +10,8 @@ var query = window.location.search.substring(1);
 
 
 
+//var image = getQueryVariable("image");
+//var description = getQueryVariable("description");
 var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
@@ -55,13 +57,13 @@ d9.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="bac
  
 else if (media1type == "youtube") {
 //alert("case 2 youtube");
+
 jQuery(document).ready(function(){
 jQuery(".formy").hide();
  jQuery(".medy").hide();
  jQuery(".yt").show();
  jQuery(".pic").hide();
  });
- 
 
 
 let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.*(v\/|v=|vi=|vi\/|e\/|embed\/|user\/.*\/u\/\d+\/)|youtu\.be\/)([_0-9a-z-]+)/i; // added 7-12-2020;
@@ -114,6 +116,15 @@ function onYouTubeIframeAPIReady() {
   ///document.getElementById('playButton').onclick = function() {
    // player1.playVideo();
  // };
+       
+var title1 =  player1.getVideoData().title;
+var title2 =  player2.getVideoData().title;
+//alert(title1);
+//alert(title2);
+var title = title1 + "  X  " title2;
+alert(title);
+document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+
 
 }
 
@@ -167,6 +178,11 @@ function onPlayerStateChange(event) {
 // Div "player" - The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
+       
+     //  var videoData = player.getVideoData();
+//var title = videoData['title'];
+//var video_id = videoData['video_id'];
+//var author = videoData['author'];
 }
 }       
 }
