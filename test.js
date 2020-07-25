@@ -11,7 +11,7 @@ jQuery.get("https://api.urlday.com/short?url=currentURL", function(data, status)
                                       alert("Data: " + data); 
 
                              });
-});                            
+//});                            
 
 //}
   /* Get the text field */
