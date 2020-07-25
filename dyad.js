@@ -174,8 +174,7 @@ function onPlayerReady(event) {
 var title = title1 + "  X  " + title2;
 alert(title);
  jQuery(document).ready(function(){
-$('meta[property="og:title"]').remove();
-    $('head').append( '<meta property="og:title" content=" + title + " />' );
+$('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
 });
   
 //document.querySelector('meta[property="og:title"]').setAttribute("content", title);
