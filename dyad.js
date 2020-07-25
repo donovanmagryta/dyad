@@ -167,6 +167,13 @@ function onPlayerStateChange(event) {
 // Div "player" - The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
+  var title1 =  player1.getVideoData().title;
+var title2 =  player2.getVideoData().title;
+//alert(title1);
+//alert(title2);
+var title = title1 + "  X  " title2;
+alert(title);
+document.querySelector('meta[property="og:title"]').setAttribute("content", title);
 }
 }       
 }
