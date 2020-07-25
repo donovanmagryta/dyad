@@ -9,6 +9,8 @@ var currentURL = window.location.href;
 
 jQuery.get("https://api.urlday.com/short?url="+currentURL+"", function(data, result){
                                       alert("Data: " + data);
+alert(JSON.stringify(data));
+alert(JSON.stringify(result));
                               });
                             
 });                            
