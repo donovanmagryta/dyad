@@ -20,7 +20,7 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 
 //var lank = window.location.href;
-var lank = "http://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&vis=vis";
+var lank = "https://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"+"&submit=submit";
 //alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
     jQuery.get(geturl, function(data, status){
