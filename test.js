@@ -56,7 +56,7 @@ var tester = getQueryVariable("tester");
         alert("Compressed: " + result);
         var clunky = "https://dyad.link/#" + result; //untested
 	 alert("compressed:" + clunky);
-        //  window.location = clunky; //untested
+        window.location = clunky; //untested
         
        });
 
