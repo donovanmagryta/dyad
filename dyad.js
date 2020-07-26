@@ -30,7 +30,7 @@ var geturl = "https://api.urlday.com/short?url=" + lank;
 
       var hi = JSON.stringify(data.result);
       str = hi.slice(1, -1);
-      //alert(str);
+      alert(str);
      //$(".dummy").html(str);
            location.replace(str);
     
@@ -40,6 +40,7 @@ var geturl = "https://api.urlday.com/short?url=" + lank;
 });
        
 }
+} // unsure if needed.
  var checkvisitor = getQueryVariable("vis");
 if (checkvisitor) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
