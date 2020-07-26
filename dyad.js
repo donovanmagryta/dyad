@@ -59,7 +59,7 @@ var clink = typ.uncompress();
 var clunky = "https://dyad.link?" + clink;
 window.location = clunky;
 */
-ar compression_mode = 1,
+var compression_mode = 1,
     my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
 var windy = window.location.search;
 alert("url querystring:" + windy);
