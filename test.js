@@ -54,7 +54,7 @@ var tester = getQueryVariable("tester");
 	
 	my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         alert("Compressed: " + result);
-        var clunky = "https://dyad.link/#" + result; //untested
+        var clunky = "https://dyad.link/test.html#" + result; //untested
 	 alert("compressed:" + clunky);
         window.location = clunky; //untested
         
