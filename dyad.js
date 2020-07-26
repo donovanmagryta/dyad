@@ -9,7 +9,19 @@ var query = window.location.search.substring(1);
 }
 
 
-var lank = window.location.href;
+
+
+var media1 = getQueryVariable("media1");
+var media2 = getQueryVariable("media2");
+var media1type = getQueryVariable("media1type");
+var media2type = getQueryVariable("media12type");
+var buttontitle = getQueryVariable("buttontitle");
+var buttonlink = getQueryVariable("buttonlink");
+var checksubmit = getQueryVariable("submit");
+
+//var lank = window.location.href;
+var lank = "http://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&vis=vis";
+//alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
     jQuery.get(geturl, function(data, status){
     var hi = JSON.stringify(data.result);
@@ -29,13 +41,7 @@ function copyToClip(str) {
 };
 
 
-var media1 = getQueryVariable("media1");
-var media2 = getQueryVariable("media2");
-var media1type = getQueryVariable("media1type");
-var media2type = getQueryVariable("media12type");
-var buttontitle = getQueryVariable("buttontitle");
-var buttonlink = getQueryVariable("buttonlink");
-var checksubmit = getQueryVariable("submit");
+
 if (checksubmit) {
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
