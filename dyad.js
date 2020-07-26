@@ -61,7 +61,7 @@ window.location = clunky;
 */
 var compression_mode = 1,
     my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
-var windy = window.location.search;
+var windy = window.location.search.substring(1);
 alert("url querystring:" + windy);
 //document.getElementById("go").onclick = function () {
     /// First, let's compress it.
