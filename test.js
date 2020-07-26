@@ -89,15 +89,13 @@ var buttonlink = parseQueryVariable("buttonlink");
 var checksubmit = parseQueryVariable("submit");
 var tester = parseQueryVariable("tester");
 	
-		
-        }, function on_decompress_progress_update(percent) {
-            /// Decompressing progress code goes here.
-            document.title = "Decompressing: " + (percent * 100) + "%";
+	}, function on_decompress_progress_update(percent) {
+            
         });
     }, function on_compress_progress_update(percent) {
-        /// Compressing progress code goes here.
-        document.title = "Compressing: " + (percent * 100) + "%";
+        
     });
+
 }
 
 
