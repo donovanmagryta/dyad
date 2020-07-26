@@ -9,6 +9,29 @@ var query = window.location.search.substring(1);
 }
 
 function myFunction() {
+   
+  jQuery(document).ready(function(){
+var lank = window.location.href;
+//var lank = "https://google.com";
+ //var lank = "http://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&vis=vis";
+//alert(lank);
+var geturl = "https://api.urlday.com/short?url=" + lank;
+//alert(geturl);
+// jQuery(".butshort").click(function(){
+    jQuery.get(geturl, function(data, status){
+
+      var hi = JSON.stringify(data.result);
+      str = hi.slice(1, -1);
+      alert(str);
+     $(".shorturl").html(str);
+     $("shorturl").html(str);
+           
+    
+  });
+  //});
+  
+});     
+   
   var copyText = document.getElementById("shorturl");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
