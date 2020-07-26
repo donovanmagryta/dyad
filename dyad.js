@@ -8,16 +8,7 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
-
-
-var media1 = getQueryVariable("media1");
-var media2 = getQueryVariable("media2");
-var media1type = getQueryVariable("media1type");
-var media2type = getQueryVariable("media12type");
-var buttontitle = getQueryVariable("buttontitle");
-var buttonlink = getQueryVariable("buttonlink");
-var checksubmit = getQueryVariable("submit");
-
+function sharLink() {
 //var lank = window.location.href;
  var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"+"%26submit=submit";
 //alert(lank);
@@ -40,6 +31,17 @@ function copyToClip(str) {
   document.removeEventListener("copy", listener);
   alert("Link to this duo copied to clipboard");
 };
+}
+
+
+var media1 = getQueryVariable("media1");
+var media2 = getQueryVariable("media2");
+var media1type = getQueryVariable("media1type");
+var media2type = getQueryVariable("media12type");
+var buttontitle = getQueryVariable("buttontitle");
+var buttonlink = getQueryVariable("buttonlink");
+var checksubmit = getQueryVariable("submit");
+
 
 
 if (checksubmit) {
