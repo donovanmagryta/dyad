@@ -72,7 +72,7 @@ function decomPressy() {
     /// First, let's compress it.
    var typ = window.location.hash.substr(1); //untested
 	    //alert("after hash is" + typ);
-	alert(typeof(type));
+	alert(typeof(typ));
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
 		alert(typeof(result));
