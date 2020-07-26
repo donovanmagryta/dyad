@@ -1,3 +1,10 @@
+var media1 = "";
+var media2 = "";
+var media1type= "";
+var media2type = "";
+var buttonlink = "";
+var buttontitle = "";
+
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var vars = query.split("&");
@@ -22,8 +29,8 @@ function copyToClip(str) {
 
 function sharLink() {
 //var lank = window.location.href;
-       var lank = "https://google.com";
- //var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"+"%26submit=submit";
+       //var lank = "https://google.com";
+ var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"+"%26submit=submit";
 //alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
 alert(geturl);
