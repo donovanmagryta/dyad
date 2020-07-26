@@ -68,9 +68,11 @@ function comPressy() {
     /// First, let's compress it.
     my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         alert("Compressed: " + result);
-        
+	    var clunky = "https://dyad.link?" + result; //untested
+          window.location = clunky; //untested
+        var typ = window.location.hash.substr(1); //untested
         /// Now, let's try to decompress it to make sure it works both ways.
-        my_lzma.decompress(result, function on_decompress_complete(result) {
+        my_lzma.decompress(typ, function on_decompress_complete(result) {
             alert("Decompressed: " + result);
         }, function on_decompress_progress_update(percent) {
             /// Decompressing progress code goes here.
@@ -94,7 +96,10 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttontitle = String(buttontitle).replace(/\s+/g, '');
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
-
+var tester = getQueryVariable("tester");
+if (tester){
+	comPressy();
+}
 
 
 if (checksubmit) {
