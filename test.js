@@ -1,6 +1,6 @@
 
 function parseQueryVariable(variable) {
-var query = result;
+var query = myStrang;
        var vars = query.split("&");
        for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
@@ -77,6 +77,8 @@ function decomPressy() {
 		alert(typeof(result));
             alert("Decompressed: " + result);
 		//here
+		var myStrang = JSON.stringify(result);
+		alert(myStrang);
 		var media1 = parseQueryVariable("media1");
 var media2 = parseQueryVariable("media2");
 var media1type = parseQueryVariable("media1type");
