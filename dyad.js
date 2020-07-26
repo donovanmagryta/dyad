@@ -8,38 +8,26 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
-//function myFunction() {
-   
-  //jQuery(document).ready(function(){
-var lank = window.location.href;
-//var lank = "https://google.com";
- //var lank = "http://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&vis=vis";
-//alert(lank);
-var geturl = "https://api.urlday.com/short?url=" + lank;
-//alert(geturl);
-// jQuery(".butshort").click(function(){
-   //jQuery("#shorturl").click(function(){
-    jQuery.get(geturl, function(data, status){
 
-      var hi = JSON.stringify(data.result);
+var lank = window.location.href;
+var geturl = "https://api.urlday.com/short?url=" + lank;
+    jQuery.get(geturl, function(data, status){
+    var hi = JSON.stringify(data.result);
       str = hi.slice(1, -1);
-      //alert(str);
-     jQuery("#shorturl").html(str);
-    // jQuery("shorturl").html(str);
-           
-    
-  });
-  //});
+      jQuery("#den").html(str);
+    });   
   
-//});     
-  jQuery("#shorturl").click(function(){ 
-  var copyText = document.getElementById("shorturl");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
+function copyToClip(str) {
+  function listener(e) {
+    e.clipboardData.setData("text/html", str);
+    e.clipboardData.setData("text/plain", str);
+    e.preventDefault();
+  }
+  document.addEventListener("copy", listener);
   document.execCommand("copy");
-  alert("Copied this Dyad link: " + copyText.value);
-//}
-});  
+  document.removeEventListener("copy", listener);
+};
+
 
 var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
