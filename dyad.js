@@ -8,7 +8,13 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
-
+function myFunction() {
+  var copyText = document.getElementById("shorturl");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied this Dyad link: " + copyText.value);
+}
 
 var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
