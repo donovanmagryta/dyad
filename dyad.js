@@ -24,7 +24,7 @@ function copyToClip(str) {
   document.addEventListener("copy", listener);
   document.execCommand("copy");
   document.removeEventListener("copy", listener);
-  alert("Link to this duo copied to clipboard");
+  alert("Dyad copied!. Paste on social media to share!");
 }
 
 function sharLink() {
@@ -37,7 +37,7 @@ var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%2
       // var lank = "https://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&submit=submit";
 //alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
-alert(geturl);
+//alert(geturl);
     jQuery.get(geturl, function(data, status){
     var hi = JSON.stringify(data.result);
       str = hi.slice(1, -1);
@@ -76,6 +76,7 @@ document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
 var d2 = document.getElementById('button2');
 d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+ sharLink();
  }
  
  
@@ -91,6 +92,7 @@ document.getElementById('pic1').src = media1;
 document.getElementById('pic2').src = media2;
 var d9 = document.getElementById('button3');
 d9.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+ sharLink();
  }
  
  
@@ -111,9 +113,7 @@ jQuery(".formy").hide();
 //alert(title1);
 //alert(title2);
 var title = title1 + "  X  " + title2;
-alert(title);
-document.querySelector('meta[property="og:title"]').setAttribute("content", title);
-        document.querySelector('meta[property="og:description"]').setAttribute("description", " + title +" );
+
 jQuery('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
 jQuery('meta[property="og:description"]').replaceWith('<meta property="og:description" content=" + title + ">');
 }
