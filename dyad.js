@@ -30,7 +30,11 @@ function copyToClip(str) {
 function sharLink() {
 //var lank = window.location.href;
        //var lank = "https://google.com";
- var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"%26submit=submit";
+       // url encoded ampersands works but %20 space fails.
+// var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"%26submit=submit";
+//alert(lank);
+       //try without encoding ampersands
+       var lank = "https://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&submit=submit";
 //alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
 alert(geturl);
