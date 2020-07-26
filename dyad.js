@@ -63,35 +63,24 @@ var compression_mode = 1,
  my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
 var windy = window.location.search.substring(1);
 alert("url querystring:" + windy);
-//var resultcomp = my_lzma.compress(string || byte_array, mode);
-var resultcomp = my_lzma.compress(windy || byte_array, 1);
-alert("Compressed: " + resultcomp);
-/// To decompress:
-//var resultdecomp = my_lzma.decompress(byte_array);
-var resultdecomp = my_lzma.decompress(resultcomp);
-alert("decompressed: " + resultdecomp);
-/*//document.getElementById("go").onclick = function () {
+
+function comPressy() {
     /// First, let's compress it.
-    my_LZMA.compress(windy, compression_mode, function on_compress_complete(result) {
+    my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         alert("Compressed: " + result);
-    }
+        
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(result, function on_decompress_complete(result) {
             alert("Decompressed: " + result);
-        //},
-			   }
-			   //function on_decompress_progress_update(percent) {
+        }, function on_decompress_progress_update(percent) {
             /// Decompressing progress code goes here.
-            //document.title = "Decompressing: " + (percent * 100) + "%";
-        //});
-   // }, 
-//function on_compress_progress_update(percent) {
+           // document.title = "Decompressing: " + (percent * 100) + "%";
+        });
+    }, function on_compress_progress_update(percent) {
         /// Compressing progress code goes here.
         //document.title = "Compressing: " + (percent * 100) + "%";
-    //});
-//}
-*/
-
+    });
+}
 
 
 
