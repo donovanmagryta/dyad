@@ -67,10 +67,11 @@ alert("url querystring:" + windy);
 function comPressy() {
     /// First, let's compress it.
     my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
-        alert("Compressed: " + result);
-	    var clunky = "https://dyad.link?" + result; //untested
+        alert("Compressed querystring: " + result);
+	    var clunky = "https://dyad.link#" + result; //untested
+	    alert("shortened url:" + clunky);
           window.location = clunky; //untested
-        var typ = window.location.hash.substr(1); //untested
+	   var typ = window.location.hash.substr(1); //untested
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
             alert("Decompressed: " + result);
