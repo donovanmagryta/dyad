@@ -40,7 +40,7 @@ var geturl = "https://api.urlday.com/short?url=" + lank;
 });
        
 }
-} // unsure if needed.
+//} // unsure if needed.
  var checkvisitor = getQueryVariable("vis");
 if (checkvisitor) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
