@@ -72,16 +72,17 @@ function comPressy() {
 	    alert(clunky);
           window.location = clunky; //untested
 	   var typ = window.location.hash.substr(1); //untested
+	    alert("after hash is" + typ);
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
             alert("Decompressed: " + result);
         }, function on_decompress_progress_update(percent) {
             /// Decompressing progress code goes here.
-           // document.title = "Decompressing: " + (percent * 100) + "%";
+            document.title = "Decompressing: " + (percent * 100) + "%";
         });
     }, function on_compress_progress_update(percent) {
         /// Compressing progress code goes here.
-        //document.title = "Compressing: " + (percent * 100) + "%";
+        document.title = "Compressing: " + (percent * 100) + "%";
     });
 }
 
