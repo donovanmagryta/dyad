@@ -23,6 +23,7 @@ var checksubmit = getQueryVariable("submit");
 var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"+"%26submit=submit";
 //alert(lank);
 var geturl = "https://api.urlday.com/short?url=" + lank;
+alert(geturl);
     jQuery.get(geturl, function(data, status){
     var hi = JSON.stringify(data.result);
       str = hi.slice(1, -1);
@@ -38,6 +39,7 @@ function copyToClip(str) {
   document.addEventListener("copy", listener);
   document.execCommand("copy");
   document.removeEventListener("copy", listener);
+  alert("Link to this duo copied to clipboard");
 };
 
 
