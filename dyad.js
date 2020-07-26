@@ -49,7 +49,7 @@ var blenk = lank.compress();
    // jQuery.get(geturl, function(data, status){
     //var hi = JSON.stringify(data.result);
      // str = hi.slice(1, -1);
-      jQuery("#den").html(str);
+     // jQuery("#den").html(str);
   //  });
 }
 
