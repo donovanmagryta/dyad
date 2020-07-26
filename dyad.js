@@ -98,7 +98,7 @@ jQuery(".formy").hide();
  jQuery(".pic").hide();
  });
        
- 
+ sharLink();
  
  function metAhh() { 
   var title1 =  player1.getVideoData().title;
