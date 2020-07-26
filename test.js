@@ -26,7 +26,7 @@ var query = window.location.search.substring(1);
 
 function comPressy() {
 
-var media1 = getQueryVariable("media1");
+/* var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
 var media2type = getQueryVariable("media12type");
@@ -35,7 +35,9 @@ var buttontitle = String(buttontitle).replace(/\s+/g, '');
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 var tester = getQueryVariable("tester");
+
 	var windy = "?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"%26submit=submit";
+    */
     /// First, let's compress it.
     /*my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         //alert("Compressed querystring: " + result);
@@ -51,7 +53,7 @@ var tester = getQueryVariable("tester");
         document.title = "Compressing: " + (percent * 100) + "%";
     });
     */
-	
+	var windy = window.location.search.substring(1);
 	my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         alert("Compressed: " + result);
         var clunky = "https://dyad.link/test.html#" + result; //untested
