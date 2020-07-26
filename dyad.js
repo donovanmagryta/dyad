@@ -23,8 +23,8 @@ var geturl = "https://api.urlday.com/short?url=" + lank;
       var hi = JSON.stringify(data.result);
       str = hi.slice(1, -1);
       alert(str);
-     $(".shorturl").html(str);
-     $("shorturl").html(str);
+     jQuery(".shorturl").html(str);
+    // jQuery("shorturl").html(str);
            
     
   });
