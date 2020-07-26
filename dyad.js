@@ -65,13 +65,37 @@ var windy = window.location.search.substring(1);
 alert("url querystring:" + windy);
 
 function comPressy() {
+
+var media1 = getQueryVariable("media1");
+var media2 = getQueryVariable("media2");
+var media1type = getQueryVariable("media1type");
+var media2type = getQueryVariable("media12type");
+var buttontitle = getQueryVariable("buttontitle");
+var buttontitle = String(buttontitle).replace(/\s+/g, '');
+var buttonlink = getQueryVariable("buttonlink");
+var checksubmit = getQueryVariable("submit");
+var tester = getQueryVariable("tester");
+	var windy = "?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"%26submit=submit";
     /// First, let's compress it.
     my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
         //alert("Compressed querystring: " + result);
 	    var clunky = "https://dyad.link/#" + result; //untested
 	    alert(clunky);
           window.location = clunky; //untested
-	   var typ = window.location.hash.substr(1); //untested
+	    }, function on_decompress_progress_update(percent) {
+            /// Decompressing progress code goes here.
+            document.title = "Decompressing: " + (percent * 100) + "%";
+        });
+    }, function on_compress_progress_update(percent) {
+        /// Compressing progress code goes here.
+        document.title = "Compressing: " + (percent * 100) + "%";
+    });
+}
+
+
+function decomPressy() {
+    /// First, let's compress it.
+   var typ = window.location.hash.substr(1); //untested
 	    alert("after hash is" + typ);
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
@@ -100,11 +124,19 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 var tester = getQueryVariable("tester");
 if (tester){
+	//for testing purposes
 	comPressy();
 }
-comPressy();
+if(window.location.hash) {
+  // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
+decomPressy();
+}
 
 if (checksubmit) {
+	// no fragment - compress then redirect to compressed url with hash included. this needs to replace checksubmit below.
+	comPressy();
+}
+/* if (checksubmit) {
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
@@ -273,7 +305,7 @@ function onPlayerReady(event) {
 }
 }       
 }
-       
+ */      
 else {
  jQuery(document).ready(function(){
  jQuery(".formy").show();
