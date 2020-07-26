@@ -8,6 +8,18 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
+function copyToClip(str) {
+  function listener(e) {
+    e.clipboardData.setData("text/html", str);
+    e.clipboardData.setData("text/plain", str);
+    e.preventDefault();
+  }
+  document.addEventListener("copy", listener);
+  document.execCommand("copy");
+  document.removeEventListener("copy", listener);
+  alert("Link to this duo copied to clipboard");
+}
+
 function sharLink() {
 //var lank = window.location.href;
  var lank = "https://dyad.link/index.html?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"+"%26submit=submit";
@@ -19,18 +31,6 @@ alert(geturl);
       str = hi.slice(1, -1);
       jQuery("#den").html(str);
     });
-
-function copyToClip(str) {
-  function listener(e) {
-    e.clipboardData.setData("text/html", str);
-    e.clipboardData.setData("text/plain", str);
-    e.preventDefault();
-  }
-  document.addEventListener("copy", listener);
-  document.execCommand("copy");
-  document.removeEventListener("copy", listener);
-  alert("Link to this duo copied to clipboard");
-};
 }
 
 
