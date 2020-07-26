@@ -52,7 +52,7 @@ var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
 var media2type = getQueryVariable("media12type");
 var buttontitle = getQueryVariable("buttontitle");
-var buttontitle = buttontitle.replace(/\s+/g, '');
+var buttontitle = String(buttontitle).replace(/\s+/g, '');
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 
