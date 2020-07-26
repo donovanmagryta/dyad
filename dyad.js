@@ -18,7 +18,30 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 if (checksubmit) {
-       //alert("form sumbmitted");
+jQuery(document).ready(function(){
+//var lank = window.location.href;
+//var lank = "https://google.com";
+ var lank = "http://dyad.link/index.html?media1="+media1+"&media2="+media2+"&buttonlink="+buttonlink+"&buttontitle="+buttontitle+"&media1type="+media1type+"&media2type="+media1type+"&vis=vis";
+//alert(lank);
+var geturl = "https://api.urlday.com/short?url=" + lank;
+//alert(geturl);
+ jQuery(".buttn").click(function(){
+    jQuery.get(geturl, function(data, status){
+
+      var hi = JSON.stringify(data.result);
+      str = hi.slice(1, -1);
+      //alert(str);
+     //$(".dummy").html(str);
+           location.replace(str);
+    
+  });
+  });
+  
+});
+       
+}
+ var checkvisitor = getQueryVariable("vis");
+if (checkvisitor) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
