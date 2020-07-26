@@ -59,6 +59,36 @@ var clink = typ.uncompress();
 var clunky = "https://dyad.link?" + clink;
 window.location = clunky;
 */
+ar compression_mode = 1,
+    my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
+var windy = window.location.search;
+alert("url querystring:" + windy);
+//document.getElementById("go").onclick = function () {
+    /// First, let's compress it.
+    my_LZMA.compress(windy, compression_mode, function on_compress_complete(result) {
+        alert("Compressed: " + result);
+    }
+        /// Now, let's try to decompress it to make sure it works both ways.
+        my_lzma.decompress(result, function on_decompress_complete(result) {
+            alert("Decompressed: " + result);
+        //},
+			   }
+			   //function on_decompress_progress_update(percent) {
+            /// Decompressing progress code goes here.
+            //document.title = "Decompressing: " + (percent * 100) + "%";
+        //});
+   // }, 
+//function on_compress_progress_update(percent) {
+        /// Compressing progress code goes here.
+        //document.title = "Compressing: " + (percent * 100) + "%";
+    //});
+//}
+
+
+
+
+
+
 
 var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
