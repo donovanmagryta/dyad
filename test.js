@@ -55,7 +55,7 @@ var tester = getQueryVariable("tester");
     */
 	var windy = window.location.search.substring(1);
 	my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
-        alert("Compressed: " + result);
+        //alert("Compressed: " + result);
         var clunky = "https://dyad.link/test.html#" + result; //untested
 	 alert("compressed:" + clunky);
         window.location = clunky; //untested
@@ -71,11 +71,12 @@ var tester = getQueryVariable("tester");
 function decomPressy() {
     /// First, let's compress it.
    var typ = window.location.hash.substr(1); //untested
-	    alert("after hash is" + typ);
+	    //alert("after hash is" + typ);
+	alert(typeof(type));
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
 		alert(typeof(result));
-            alert("Decompressed: " + result);
+            //alert("Decompressed: " + result);
 		//here
 		var myStrang = JSON.stringify(result);
 		alert(myStrang);
