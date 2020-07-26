@@ -102,7 +102,7 @@ var tester = getQueryVariable("tester");
 if (tester){
 	comPressy();
 }
-
+comPressy();
 
 if (checksubmit) {
        //alert("form sumbmitted");
