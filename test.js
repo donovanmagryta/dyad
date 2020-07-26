@@ -58,12 +58,7 @@ var tester = getQueryVariable("tester");
 	 alert("compressed:" + clunky);
         //  window.location = clunky; //untested
         
-        }, function on_decompress_progress_update(percent) {
-            
-        });
-    }, function on_compress_progress_update(percent) {
-        
-    });
+       });
 
 }
 
@@ -89,10 +84,7 @@ var buttonlink = parseQueryVariable("buttonlink");
 var checksubmit = parseQueryVariable("submit");
 var tester = parseQueryVariable("tester");
 	
-	}, function on_decompress_progress_update(percent) {
-            
-        });
-    }, function on_compress_progress_update(percent) {
+	
         
     });
 
