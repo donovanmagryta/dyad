@@ -72,6 +72,7 @@ function decomPressy() {
 	    alert("after hash is" + typ);
         /// Now, let's try to decompress it to make sure it works both ways.
         my_lzma.decompress(typ, function on_decompress_complete(result) {
+		alert(typeof(result));
             alert("Decompressed: " + result);
 		//here
 		var media1 = parseQueryVariable("media1");
