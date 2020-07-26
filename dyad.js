@@ -5,6 +5,8 @@ var media2type = "";
 var buttonlink = "";
 var buttontitle = "";
 
+
+
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var vars = query.split("&");
