@@ -1,7 +1,3 @@
-var compression_mode = 1,
- my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
-
-
 
 function parseQueryVariable(variable) {
 var query = result;
@@ -24,6 +20,8 @@ var query = window.location.search.substring(1);
        }
        return(false);
 }
+
+
 
 
 function comPressy() {
@@ -86,3 +84,22 @@ var tester = parseQueryVariable("tester");
         document.title = "Compressing: " + (percent * 100) + "%";
     });
 }
+
+
+
+var compression_mode = 1,
+ my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
+var checksubmit = getQueryVariable("submit");
+
+
+if(window.location.hash) {
+  // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
+decomPressy();
+}
+
+else if (checksubmit) {
+	// no fragment - compress then redirect to compressed url with hash included. this needs to replace checksubmit below.
+	comPressy();
+}
+
+
