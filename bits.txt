@@ -8,3 +8,15 @@ let id = media1.match(re)[7]; // added 7-12-2020
 var media1 = 'https://youtube.com/embed/' + id + '?autoplay=1';
 //alert(media1);
 document.getElementById('ytmedia1').src = media1;
+
+
+//parse link after hash separated by comma with specific linear order for values.
+example.com/#,https://www.youtube.com/watch?v=4ts15BW-6hw,youtube,https:\/\/vote.gov\/,Go Vote!,https:\/\/www.youtube.com/watch?v=pyn0EJEx_2s/
+var query =  window.location.hash.substr(1);
+       var vars = query.split(",");
+       var media1type = vars[1];
+        var buttonlink = vars[2];
+         var buttontitle = vars[3];
+          var media2 = vars[4];
+       
+       
