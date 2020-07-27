@@ -23,6 +23,29 @@ var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
+var lank = "https://dyad.link#" + media1type + "," + media1 + "," + media2 + "," + buttonlink + "," + buttontitle + "/" ;
+window.location = newlank;
+}
+
+if(window.location.hash) {
+  // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
+var query =  window.location.hash.substr(1);
+       var vars = query.split(",");
+       var media1 = vars[1];
+       var media1type = vars[0];
+        var buttonlink = vars[3];
+         var buttontitle = vars[4];
+          var media2 = vars[2];
+alert(media1type);
+alert(media2);
+alert(media1);
+alert(buttonlink);
+alert(buttontitle);
+
+       
+
+
+
  if (media1type == "video") {
         //alert("case 1 mp4");
 jQuery(document).ready(function(){
