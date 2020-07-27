@@ -37,11 +37,11 @@ var query =  window.location.hash.substr(1);
          var buttontitleuri = vars[4];
         var buttontitle = decodeURIComponent(buttontitleuri);
           var media2 = vars[2];
-alert(media1type);
-alert(media2);
-alert(media1);
-alert(buttonlink);
-alert(buttontitle);
+//alert(media1type);
+//alert(media2);
+//alert(media1);
+//alert(buttonlink);
+//alert(buttontitle);
 
        
 
@@ -92,7 +92,7 @@ jQuery(".formy").hide();
 //alert(title1);
 //alert(title2);
 var title = title1 + "  X  " + title2;
-alert(title);
+//alert(title);
 document.querySelector('meta[property="og:title"]').setAttribute("content", title);
         document.querySelector('meta[property="og:description"]').setAttribute("description", " + title +" );
 jQuery('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
