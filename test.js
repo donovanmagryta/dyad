@@ -105,7 +105,20 @@ var checksubmit = getQueryVariable("submit");
 
 if(window.location.hash) {
   // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
-decomPressy();
+var query =  window.location.hash.substr(1);
+       var vars = query.split(",");
+       var media1 = vars[1];
+       var media1type = vars[0];
+        var buttonlink = vars[3];
+         var buttontitle = vars[4];
+          var media2 = vars[2];
+alert(media1type);
+alert(media2);
+alert(media1);
+alert(buttonlink);
+alert(buttontitle);
+
+       
 }
 
 else if (checksubmit) {
