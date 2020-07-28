@@ -16,7 +16,7 @@ copyText.select();
 document.execCommand("copy");
 copyText.type = 'hidden';
   /* Alert the copied text */
-  alert("Copied the link for this dyad: " + copyText.value);
+  alert("Link copied. Share away!");
   }
 
 
