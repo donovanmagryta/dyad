@@ -1,3 +1,5 @@
+// add way to get form input box text with js and then hide the form and display the inputted content?
+
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var vars = query.split("&");
@@ -8,15 +10,21 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
+/* var media1=Request.Form("media1");
+var media2=Request.Form("media2");
+var buttonlink=Request.Form("buttonlink");
+var buttontitle=Request.Form("buttontitle")
+*/
 
 
-var media1 = getQueryVariable("media1");
+ var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
 var media2type = getQueryVariable("media12type");
 var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
+
 if (checksubmit) {
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
