@@ -41,7 +41,7 @@ window.location = newlank;
 }
 
 if(window.location.hash) {
-   document.getElementById("invisiblediv").innerHTML = window.location;
+   document.getElementById("invisiblediv").value = window.location;
   // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
 var query =  window.location.hash.substr(1);
        var vars = query.split("~");
