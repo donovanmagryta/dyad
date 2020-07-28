@@ -108,7 +108,10 @@ jQuery(".formy").hide();
  function metAhh() { 
   var title1 =  player1.getVideoData().title;
   var title2 =  player2.getVideoData().title;
-//alert(title1);
+        var author1 =  player2.getVideoData().author;
+alert("author1:" + author1);
+        var chan1 =  player2.getVideoData().channel;
+alert("channel1:" + chan1);
 //alert(title2);
 var title = title1 + "  X  " + title2;
  var tiel = "Dyad: A better way to share videos";
