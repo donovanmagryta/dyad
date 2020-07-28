@@ -34,9 +34,11 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 if (checksubmit) {
        //alert("form sumbmitted");
-var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
+       //7/27/2020 testing removal of url decode.
+/* var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
+*/
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
 var newlank = "https://dyad.link#" + media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "/" ;
 window.location = newlank;
@@ -58,6 +60,11 @@ var query =  window.location.hash.substr(1);
 //alert(media1);
 //alert(buttonlink);
 //alert(buttontitle);
+       
+       //moved 7/27/2020 from above to decode urls after sharing
+ var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
+var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
+var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 
        
 
