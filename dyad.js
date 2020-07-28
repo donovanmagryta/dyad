@@ -11,17 +11,13 @@ var query = window.location.search.substring(1);
 function copyText() {
  /* Get the text field */
   var copyText = document.getElementById("invisiblediv");
-
-  /* Select the text field */
- copyText.select();
- copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
+copyText.type = 'text';
+copyText.select();
+document.execCommand("copy");
+copyText.type = 'hidden';
   /* Alert the copied text */
   alert("Copied the link for this dyad: " + copyText.value);
-}
+  }
 
 
 
