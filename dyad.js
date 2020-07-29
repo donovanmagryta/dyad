@@ -25,9 +25,23 @@ document.getElementById('fb').onclick = function() {
     display: 'popup',
     method: 'share',
     href: window.location,
+    picture: 'http://fbrell.com/f8.jpg',
+    caption: 'caption',
+    description: 'description.'
   }, function(response){});
 }
 
+/* $(".userActions a.facebook").click(function() {
+    FB.ui({
+        method: 'feed',
+        name: 'Facebook Dialogs',
+        link: 'https://developers.facebook.com/docs/dialogs/',
+        picture: 'http://fbrell.com/f8.jpg',
+        caption: 'Reference Documentation',
+        description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
+    });
+});
+*/
 
  var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
