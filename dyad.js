@@ -20,28 +20,12 @@ copyText.type = 'hidden';
   alert("Link copied. Share away!");
   }
 
-document.getElementById('fb').onclick = function() {
-  FB.ui({
-    display: 'popup',
-    method: 'share',
-    href: window.location,
-    picture: 'http://fbrell.com/f8.jpg',
-    caption: 'caption',
-    description: 'description.'
-  }, function(response){});
+var fb = document.getElementById('fb');
+fbshare = "https://www.facebook.com/sharer/sharer.php?u=" + window.location + "%26quote=quote1%26picture=https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Litoria_xanthomera_amplexus.jpg/1200px-Litoria_xanthomera_amplexus.jpg&26title=title1%26description=description1%26caption=caption1/";
+fb.innerHTML = fbshare; 
 }
 
-/* $(".userActions a.facebook").click(function() {
-    FB.ui({
-        method: 'feed',
-        name: 'Facebook Dialogs',
-        link: 'https://developers.facebook.com/docs/dialogs/',
-        picture: 'http://fbrell.com/f8.jpg',
-        caption: 'Reference Documentation',
-        description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
-    });
-});
-*/
+
 
  var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
