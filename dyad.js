@@ -31,16 +31,16 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 var duo = getQueryVariable("duo");
 
-if (checksubmit) {
-//if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
+//if (checksubmit) {
+if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
-       var lanke = encodeURIComponent(lonky);
+  var lanke = encodeURIComponent(lonky);
   var lanky = btoa(lanke);
   var newlank = "https://dyad.link/?duo=" + lanky;
        alert(newlank);
 //var newlank = encodeURIComponent(newlank);
-//window.location = newlank;
+window.location = newlank;
 }
 
 if (duo) {
