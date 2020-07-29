@@ -30,13 +30,15 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 var duo = getQueryVariable("duo");
+
+
+if (checksubmit) {
+       
+//if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
-
-if (checksubmit) {
-//if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
   //var lanke = encodeURIComponent(lonky);
