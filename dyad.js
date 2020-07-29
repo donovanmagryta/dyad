@@ -43,7 +43,7 @@ if (checksubmit) {
 //window.location = newlank;
 }
 
-else if (duo) {
+if (duo) {
        
        stringy = atob(duo);
        var vars = stringy.split("~");
