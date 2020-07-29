@@ -1,4 +1,3 @@
-// add way to get form input box text with js and then hide the form and display the inputted content?
 
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
@@ -9,13 +8,6 @@ var query = window.location.search.substring(1);
        }
        return(false);
 }
-
-/* var media1=Request.Form("media1");
-var media2=Request.Form("media2");
-var buttonlink=Request.Form("buttonlink");
-var buttontitle=Request.Form("buttontitle")
-*/
-
 
 function copyText() {
  /* Get the text field */
@@ -39,13 +31,15 @@ var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
 var duo = getQueryVariable("duo");
 
-if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
+if (checksubmit) {
+//if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
   var lanky = btoa(lonky);
   var newlank = "https://dyad.link?duo=" + lanky;
+       alert(newlank);
 //var newlank = encodeURIComponent(newlank);
-window.location = newlank;
+//window.location = newlank;
 }
 
 else if (duo) {
