@@ -17,6 +17,19 @@ var buttontitle=Request.Form("buttontitle")
 */
 
 
+function copyText() {
+ /* Get the text field */
+  var copyText = document.getElementById("invisiblediv");
+copyText.type = 'text';
+copyText.select();
+document.execCommand("copy");
+copyText.type = 'hidden';
+  /* Alert the copied text */
+  alert("Link copied. Share away!");
+  }
+
+
+
  var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
@@ -36,6 +49,7 @@ window.location = newlank;
 }
 
 else if (duo) {
+       
        stringy = atob(duo);
        var vars = stringy.split("~");
        var media1 = vars[1];
@@ -45,7 +59,7 @@ else if (duo) {
         var buttontitle = decodeURIComponent(buttontitleuri);
          var media2 = vars[2];
        
- 
+ document.getElementById("invisiblediv").value = window.location;
        
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
