@@ -24,8 +24,29 @@ var media2type = getQueryVariable("media12type");
 var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
+var duo = getQueryVariable("duo");
 
-if (checksubmit) {
+if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
+       
+ var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
+  var lanky = btoa(lonky);
+  var newlank = "https://dyad.link?duo=" + lanky;
+//var newlank = encodeURIComponent(newlank);
+window.location = newlank;
+}
+
+else if (duo) {
+       stringy = atob(duo);
+       var vars = stringy.split("~");
+       var media1 = vars[1];
+       var media1type = vars[0];
+        var buttonlink = vars[3];
+         var buttontitleuri = vars[4];
+        var buttontitle = decodeURIComponent(buttontitleuri);
+         var media2 = vars[2];
+       
+ 
+       
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
