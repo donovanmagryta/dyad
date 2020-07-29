@@ -32,5 +32,7 @@
 
 ## Usage:
 *Fast forward interaction causes glitch in playback for YouTube videos.
+
 *On touchscreens, short tap outside of direct center of video to unmute and swap audio.
+
 *Place mouse cursor over a video to unmute and swap audio on non-touchscreen devices.
