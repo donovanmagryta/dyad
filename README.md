@@ -13,9 +13,9 @@
 
 | ANDROID 9   | Chrome | FireFox | Edge | Safari |
 |-------------|--------|---------|------|--------|
-| MP4,WEBM    | ✔     | ✔       |   ✔  | N/A    |
-| YouTube     |        |         |      |  N/A      |
-| JPG,PNG,GIF | ✔      | ✔      | ✔    |  N/A    |
+| MP4,WEBM    | ✔     | ✔       | ✔    | N/A    |
+| YouTube     |  ✔    |  ✔      | ✔    |  N/A   |
+| JPG,PNG,GIF | ✔     | ✔       | ✔    |  N/A   |
 
 
 | iOS 13      | Chrome | FireFox | Edge | Safari |
