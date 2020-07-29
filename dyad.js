@@ -61,6 +61,13 @@ else if (duo) {
        
  document.getElementById("invisiblediv").value = window.location;
        
+       
+       document.getElementById("fbk").value = fbk;
+       document.getElementById("twt").value = twt;
+       document.getElementById("ldn").value = ldn;
+       document.getElementById("rdt").value = rdt;
+       
+       
        //alert("form sumbmitted");
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
