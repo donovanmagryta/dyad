@@ -35,8 +35,8 @@ var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
 
-//if (checksubmit) {
-if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
+if (checksubmit) {
+//if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
   //var lanke = encodeURIComponent(lonky);
