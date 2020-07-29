@@ -22,7 +22,7 @@ copyText.type = 'hidden';
 
 var fb = document.getElementById('fb');
 fbshare = "https://www.facebook.com/sharer/sharer.php?u=" + window.location + "%26quote=quote1%26picture=https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Litoria_xanthomera_amplexus.jpg/1200px-Litoria_xanthomera_amplexus.jpg&26title=title1%26description=description1%26caption=caption1/";
-fb.innerHTML = fbshare; 
+fb.innerHTML = fbshare;
 
 
 
