@@ -36,6 +36,8 @@
 
 * Place mouse cursor over a video to unmute and swap audio on non-touchscreen devices.
 
+* Functionality on Apple devices not yet tested.
+
 ### Bugs:
 
 * Fast forward interaction causes glitch in playback for YouTube videos.
