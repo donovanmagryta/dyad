@@ -42,7 +42,7 @@ var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
   //var lanke = encodeURIComponent(lonky);
-  var lanky = btoa(lanke);
+  var lanky = btoa(lonky);
   var newlank = "https://dyad.link/?duo=" + lanky;
        alert(newlank);
 //var newlank = encodeURIComponent(newlank);
