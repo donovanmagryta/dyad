@@ -122,7 +122,7 @@ jQuery(".formy").hide();
   var title1 =  player1.getVideoData().title;
   var title2 =  player2.getVideoData().title;
 var title = title1 + "  X  " + title2;
-alert(title);
+// alert(title);
 //document.querySelector('meta[property="og:title"]').setAttribute("content", title);
 //document.querySelector('meta[property="og:description"]').setAttribute("description", title);
 //jQuery('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
