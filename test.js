@@ -1,16 +1,15 @@
+/* FOR TESTING NEW FEATURES */
 
-function parseQueryVariable(variable) {
-var query = myStrang;
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
-}
-
+// parse values in linear order from comma separated url fragment.
+// ie; location = "https:example.com/#video,https:/example.com/vid.mp4,subscribe/";
+     var query =  window.location.hash.substr(1);
+      var vars = query.split("~");
+      var media = vars[0];
+      var medialink = vars[1];
+      var title = vars[2];
 
 
+//Get URL query parameter values.
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var vars = query.split("&");
@@ -20,110 +19,4 @@ var query = window.location.search.substring(1);
        }
        return(false);
 }
-
-
-
-
-function comPressy() {
-
-/* var media1 = getQueryVariable("media1");
-var media2 = getQueryVariable("media2");
-var media1type = getQueryVariable("media1type");
-var media2type = getQueryVariable("media12type");
-var buttontitle = getQueryVariable("buttontitle");
-var buttontitle = String(buttontitle).replace(/\s+/g, '');
-var buttonlink = getQueryVariable("buttonlink");
-var checksubmit = getQueryVariable("submit");
-var tester = getQueryVariable("tester");
-
-	var windy = "?media1="+media1+"%26media2="+media2+"%26buttonlink="+buttonlink+"%26buttontitle="+buttontitle+"%26media1type="+media1type+"%26media2type="+media1type+"%26submit=submit";
-    */
-    /// First, let's compress it.
-    /*my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
-        //alert("Compressed querystring: " + result);
-	    var clunky = "https://dyad.link/#" + result; //untested
-	    alert("compressed:" + clunky);
-        //  window.location = clunky; //untested
-	    }, function on_decompress_progress_update(percent) {
-            /// Decompressing progress code goes here.
-            document.title = "Decompressing: " + (percent * 100) + "%";
-        });
-    }, function on_compress_progress_update(percent) {
-        /// Compressing progress code goes here.
-        document.title = "Compressing: " + (percent * 100) + "%";
-    });
-    */
-	var windy = window.location.search.substring(1);
-	my_lzma.compress(windy, compression_mode, function on_compress_complete(result) {
-        //alert("Compressed: " + result);
-        var clunky = "https://dyad.link/test.html#" + result; //untested
-	 alert("compressed:" + clunky);
-        window.location = clunky; //untested
-        
-       });
-
-}
-
-
-
-
-
-function decomPressy() {
-    /// First, let's compress it.
-   var typ = window.location.hash.substr(1); //untested
-	    //alert("after hash is" + typ);
-	alert(typeof(typ));
-        /// Now, let's try to decompress it to make sure it works both ways.
-        my_lzma.decompress(typ, function on_decompress_complete(result) {
-		alert(typeof(result));
-            //alert("Decompressed: " + result);
-		//here
-		var myStrang = JSON.stringify(result);
-		alert(myStrang);
-		var media1 = parseQueryVariable("media1");
-var media2 = parseQueryVariable("media2");
-var media1type = parseQueryVariable("media1type");
-var media2type = parseQueryVariable("media12type");
-var buttontitle = parseQueryVariable("buttontitle");
-var buttontitle = String(buttontitle).replace(/\s+/g, '');
-var buttonlink = parseQueryVariable("buttonlink");
-var checksubmit = parseQueryVariable("submit");
-var tester = parseQueryVariable("tester");
-	
-	
-        
-    });
-
-}
-
-
-
-var compression_mode = 1,
- my_lzma = LZMA; /// lzma_worker.js creates a global LZMA object. We store it as a new variable just to match simple_demo.html.
-var checksubmit = getQueryVariable("submit");
-
-
-if(window.location.hash) {
-  // Fragment exists - decompress then run modified checksubmit where parameters are parsed from decompressed data then activating rest of interface.
-var query =  window.location.hash.substr(1);
-       var vars = query.split(",");
-       var media1 = vars[1];
-       var media1type = vars[0];
-        var buttonlink = vars[3];
-         var buttontitle = vars[4];
-          var media2 = vars[2];
-alert(media1type);
-alert(media2);
-alert(media1);
-alert(buttonlink);
-alert(buttontitle);
-
-       
-}
-
-else if (checksubmit) {
-	// no fragment - compress then redirect to compressed url with hash included. this needs to replace checksubmit below.
-	comPressy();
-}
-
-
+var video = getQueryVariable("media");
