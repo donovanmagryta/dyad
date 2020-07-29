@@ -20,6 +20,13 @@ copyText.type = 'hidden';
   alert("Link copied. Share away!");
   }
 
+document.getElementById('fb').onclick = function() {
+  FB.ui({
+    display: 'popup',
+    method: 'share',
+    href: window.location,
+  }, function(response){});
+}
 
 
  var media1 = getQueryVariable("media1");
@@ -62,10 +69,11 @@ else if (duo) {
  document.getElementById("invisiblediv").value = window.location;
        
        
-       document.getElementById("fbk").value = fbk;
+      /* document.getElementById("fbk").value = fbk;
        document.getElementById("twt").value = twt;
        document.getElementById("ldn").value = ldn;
        document.getElementById("rdt").value = rdt;
+       */
        
        
        //alert("form sumbmitted");
