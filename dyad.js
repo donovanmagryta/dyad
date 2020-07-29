@@ -25,7 +25,7 @@ copyText.type = 'hidden';
  var media1 = getQueryVariable("media1");
 var media2 = getQueryVariable("media2");
 var media1type = getQueryVariable("media1type");
-var media2type = getQueryVariable("media12type");
+var media2type = getQueryVariable("media2type");
 var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var checksubmit = getQueryVariable("submit");
@@ -35,8 +35,9 @@ if (checksubmit) {
 //if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
-  var lanky = btoa(lonky);
-  var newlank = "https://dyad.link?duo=" + lanky;
+       var lanke = encodeURIComponent(lonky);
+  var lanky = btoa(lanke);
+  var newlank = "https://dyad.link/?duo=" + lanky;
        alert(newlank);
 //var newlank = encodeURIComponent(newlank);
 //window.location = newlank;
