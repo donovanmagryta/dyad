@@ -237,3 +237,13 @@ document.querySelectorAll("video").forEach(vid => vid.pause());
 document.getElementsByTagName("video")[0].removeAttribute("controls");
 document.getElementsByTagName("video")[1].removeAttribute("controls");
 }
+
+
+function unmut() {
+       document.getElementById(e).muted = false;
+       document.getElementById(e).style.border = "2px solid green";
+}
+function mut(){
+       document.getElementById(e).muted = false;
+       document.getElementById(e).style.border = "none";
+}
