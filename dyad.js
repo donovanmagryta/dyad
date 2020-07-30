@@ -179,6 +179,7 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
   player2.playVideo();
   player1.playVideo();
+   player2.mute(); // added 7/30/2020 as test of single audio source at first start.
     //document.getElementById('playButton').innerHTML = 'Pause';
 
     // Set the onclick event to the button for pause the YouTube video.
@@ -226,6 +227,7 @@ else {
 }
 
 function playVid() {
+document.getElementById('media2').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
 document.querySelectorAll("video").forEach(vid => vid.play());
 document.getElementsByTagName("video")[0].removeAttribute("controls");
 document.getElementsByTagName("video")[1].removeAttribute("controls");
