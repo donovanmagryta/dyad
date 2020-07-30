@@ -239,11 +239,11 @@ document.getElementsByTagName("video")[1].removeAttribute("controls");
 }
 
 
-function unmut() {
+function unmut(e) {
        document.getElementById(e).muted = false;
        document.getElementById(e).style.border = "2px solid green";
 }
-function mut(){
+function mut(e){
        document.getElementById(e).muted = false;
        document.getElementById(e).style.border = "none";
 }
