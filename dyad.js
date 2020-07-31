@@ -179,6 +179,7 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
   player2.playVideo();
   player1.playVideo();
+   player1.mute(); // added 7/30/2020 as test of single audio source at first start.
    player2.mute(); // added 7/30/2020 as test of single audio source at first start.
     //document.getElementById('playButton').innerHTML = 'Pause';
 
