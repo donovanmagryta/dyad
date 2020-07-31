@@ -188,12 +188,21 @@ function onPlayerStateChange(event) {
      player1.unMute();
       player2.mute();
     
-  }
+  };
   
   document.getElementById('player2').onmouseover = function() {
       player2.unMute();
       player1.mute();
     };
+document.getElementById('player2').ontouchstart = function(){
+player2.unmute();
+player1.mute();
+};
+
+document.getElementById('player1').ontouchstart = function(){
+player1.unmute();
+player2.mute();
+};
   }
 
   // If the video is PAUSED, set the onclick element for pause the video.
