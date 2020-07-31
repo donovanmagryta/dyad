@@ -254,6 +254,6 @@ function unmut(e) {
        document.getElementById(e).style.border = "2px solid green";
 }
 function mut(e){
-       document.getElementById(e).muted = false;
+       document.getElementById(e).muted = true;
        document.getElementById(e).style.border = "none";
 }
