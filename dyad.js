@@ -11,18 +11,15 @@ var query = window.location.search.substring(1);
 
 
 function toggleyt(button) {
-   var valer = document.getElementById("tog").innnerHTML;
-   "New Button Text using innerHTML";
-  //if (button.value == "A") {
-       if (valer == "A") {
-    //button.value = "B";
-       valer.value = "B";
+   function toggleyt() {
+ var valeryt = document.getElementById("togyt").innerHTML;
+   if (valeryt == "A") {
+       document.getElementById("togyt").innerHTML="B";
     player1.unMute();
     player2.mute();
     
   } else {
-    //button.value = "A
-     valer.value = "A";
+     document.getElementById("togyt").innerHTML="A";
     player2.unMute();
     player1.mute();
   }
@@ -30,13 +27,14 @@ function toggleyt(button) {
 
 
 function togglemp4(button) {
-  if (button.value == "A") {
-    button.value = "B";
+  var valermp4 = document.getElementById("togmp4").innerHTML;
+  if (valermp4 == "A") {
+     document.getElementById("togmp4").innerHTML="B";
     document.getElementById('media1').muted = false;   /* added 7/30/2020 to test single audio source at first play. */
     document.getElementById('media2').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
     
   } else {
-    button.value = "A";
+     document.getElementById("togmp4").innerHTML="A";
     document.getElementById('media1').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
     document.getElementById('media2').muted = false;   /* added 7/30/2020 to test single audio source at first play. */
   }
