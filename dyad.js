@@ -11,7 +11,7 @@ var query = window.location.search.substring(1);
 
 
 function toggleyt(button) {
-   var valer = document.getElementById("myButton2").innnerHTML;
+   var valer = document.getElementById("tog").innnerHTML;
    "New Button Text using innerHTML";
   //if (button.value == "A") {
        if (valer == "A") {
