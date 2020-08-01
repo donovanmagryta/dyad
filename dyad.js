@@ -33,19 +33,20 @@ var media1type = getQueryVariable("media1type");
 var media2type = getQueryVariable("media2type");
 var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
+var title = getQueryVariable("title");
 var checksubmit = getQueryVariable("submit");
 var duo = getQueryVariable("duo");
 
 
 //if (checksubmit) {
        
-if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink) {
+if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink && title) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
        
- var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle;
+ var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "~" + title;
   //var lanke = encodeURIComponent(lonky);
   var lanky = btoa(lonky);
   var newlank = "https://dyad.link/?duo=" + lanky;
@@ -62,10 +63,12 @@ else if (duo) {
         var buttonlink = vars[3];
          var buttontitleuri = vars[4];
         var buttontitle = decodeURIComponent(buttontitleuri);
+       var titley = vars[5];
          var media2 = vars[2];
        
  document.getElementById("invisiblediv").value = window.location;
-       
+ document.getElementById('caption').innerHTML = titley;
+ document.title = titley;
        
       /* document.getElementById("fbk").value = fbk;
        document.getElementById("twt").value = twt;
@@ -123,7 +126,7 @@ jQuery(".formy").hide();
   var title2 =  player2.getVideoData().title;
 var title = title1 + "<br>" + "  X  " + title2;
 // alert(title);
-document.getElementById('caption').innerHTML = title;
+// document.getElementById('caption').innerHTML = title;
 //document.querySelector('meta[property="og:title"]').setAttribute("content", title);
 //document.querySelector('meta[property="og:description"]').setAttribute("description", title);
 //jQuery('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
