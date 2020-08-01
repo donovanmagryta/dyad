@@ -198,9 +198,9 @@ Compare perspectives side-by-side.</p>
      </button>
    </a>
    </div>
-      <video id="media1" controls onpause="pauseVid()" onplay="playVid()" src="">
+      <video id="media1" controls onpause="pauseVid()" onplay="playVid()" ontouchstart="document.getElementById('media1').muted = false;" onmouseover="document.getElementById('media1').muted = false;" onmouseout="document.getElementById('media1').muted = true;" src="">
    </video>
-  <video id="media2" controls onpause="pauseVid()" onplay="playVid()" src="">
+  <video id="media2" controls onpause="pauseVid()" onplay="playVid()" ontouchstart="document.getElementById('media2').muted = false;" onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;"  src="">
    <!--<video id="media2" controls onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;" onpause="pauseVid()" onplay="playVid()" src="">-->
    </video>
       </div>
