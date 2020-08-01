@@ -210,8 +210,8 @@ player2.mute();
   if (event.data == YT.PlayerState.PAUSED) {
     //document.getElementById('playButton').innerHTML = 'Play';
     //document.getElementById('playButton').onmouseout = function() {
-      player2.pauseVideo();
       player1.pauseVideo();
+      player2.pauseVideo();
     //};
   }
 }
@@ -259,7 +259,7 @@ function mut(e){
        document.getElementById(e).style.border = "none";
 }
 */
-
+/*
 document.getElementById('media1').ontouchstart = function() {
 media1.muted = false;
 media2.muted = true;
@@ -289,3 +289,5 @@ document.getElementById('media2').onmouseover = function() {
 media2.muted = false;
 media1.muted = true;
 };
+
+*/
