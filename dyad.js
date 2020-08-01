@@ -178,14 +178,14 @@ function onPlayerStateChange(event) {
   // If the video is PLAYING, set the onclick element for pause the video.
   // Once the "playButton" is clicked, the video will be paused.
   if (event.data == YT.PlayerState.PLAYING) {
-  player2.playVideo();
   player1.playVideo();
+  player2.playVideo();
    player1.mute(); // added 7/30/2020 as test of single audio source at first start.
    player2.mute(); // added 7/30/2020 as test of single audio source at first start.
     //document.getElementById('playButton').innerHTML = 'Pause';
 
     // Set the onclick event to the button for pause the YouTube video.
-    document.getElementById('player1').onmouseover = function() {
+   /*  document.getElementById('player1').onmouseover = function() {
      player1.unMute();
       player2.mute();
     
@@ -204,6 +204,7 @@ document.getElementById('player1').ontouchstart = function() {
 player1.unmute();
 player2.mute();
 };
+*/
   }
 
   // If the video is PAUSED, set the onclick element for pause the video.
