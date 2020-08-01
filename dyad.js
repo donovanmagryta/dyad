@@ -45,6 +45,7 @@ var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
 var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
+ var title = decodeURIComponent(title.replace(/\+/g, '%20') );
        
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "~" + title;
   //var lanke = encodeURIComponent(lonky);
@@ -64,6 +65,7 @@ else if (duo) {
          var buttontitleuri = vars[4];
         var buttontitle = decodeURIComponent(buttontitleuri);
        var titley = vars[5];
+       var titley = decodeURIComponent(titley.replace(/\+/g, '%20') );
          var media2 = vars[2];
        
  document.getElementById("invisiblediv").value = window.location;
