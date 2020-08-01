@@ -10,18 +10,33 @@ var query = window.location.search.substring(1);
 }
 
 
-function toggle() {
- if(document.getElementById("tog").value=="A"){ 
-document.getElementById("tog").value="B";
-player1.unMute();
-player2.mute();
-} 
-else if(document.getElementById("tog").value=="B"){ 
-document.getElementById("tog").value="A";
-player1.mute();
-player2.unMute();
- }
+function toggleyt(button) {
+  if (button.value == "A") {
+    button.value = "B";
+    player1.unMute();
+    player2.mute();
+    
+  } else {
+    button.value = "A";
+    player2.unMute();
+    player1.mute();
+  }
 }
+
+
+function togglemp4(button) {
+  if (button.value == "A") {
+    button.value = "B";
+    document.getElementById('media1').muted = false;   /* added 7/30/2020 to test single audio source at first play. */
+    document.getElementById('media2').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
+    
+  } else {
+    button.value = "A";
+    document.getElementById('media1').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
+    document.getElementById('media2').muted = false;   /* added 7/30/2020 to test single audio source at first play. */
+  }
+}
+
 
 function copyText() {
  /* Get the text field */
