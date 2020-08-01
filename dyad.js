@@ -261,7 +261,7 @@ function mut(e){
 */
 
 document.getElementById('media1').ontouchstart = function() {
-1.unmute();
+media1.unmute();
 media2.mute();
 };
 
