@@ -200,7 +200,8 @@ Compare perspectives side-by-side.</p>
    </div>
       <video id="media1" controls onmouseover="unmut(media1);" onmouseout="mut(media1);" onpause="pauseVid()" onplay="playVid()" src="">
    </video>
-      <video id="media2" controls onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;" onpause="pauseVid()" onplay="playVid()" src="">
+  <video id="media2" controls onmouseover="unmut(media2);" onmouseout="mut(media2);" onpause="pauseVid()" onplay="playVid()" src="">
+   <!--<video id="media2" controls onmouseover="document.getElementById('media2').muted = false;" onmouseout="document.getElementById('media2').muted = true;" onpause="pauseVid()" onplay="playVid()" src="">-->
    </video>
       </div>
      <script src="dyad.js"></script>
