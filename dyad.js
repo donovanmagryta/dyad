@@ -261,21 +261,31 @@ function mut(e){
 */
 
 document.getElementById('media1').ontouchstart = function() {
-media1.unmute();
-media2.mute();
+media1.muted = false;
+media2.muted = true;
 };
 
 document.getElementById('media1').onmouseover = function() {
-media1.unmute();
-media2.mute();
+media1.muted = false;
+media2.muted = true;
+};
+
+document.getElementById('media2').onmouseout = function() {
+media1.muted = false;
+media2.muted = true;
+};
+
+document.getElementById('media1').onmouseout = function() {
+media1.muted = true;
+media2.muted = false;
 };
 
 document.getElementById('media2').ontouchstart = function() {
-media2.unmute();
-media1.mute();
+media2.muted = false;
+media1.muted = true;
 };
 
 document.getElementById('media2').onmouseover = function() {
-media2.unmute();
-media1.mute();
+media2.muted = false;
+media1.muted = true;
 };
