@@ -121,8 +121,9 @@ jQuery(".formy").hide();
  function metAhh() { 
   var title1 =  player1.getVideoData().title;
   var title2 =  player2.getVideoData().title;
-var title = title1 + "  X  " + title2;
+var title = title1 + "<br>" + "  X  " + title2;
 // alert(title);
+document.getElementById('caption').innerHTML = title;
 //document.querySelector('meta[property="og:title"]').setAttribute("content", title);
 //document.querySelector('meta[property="og:description"]').setAttribute("description", title);
 //jQuery('meta[property="og:title"]').replaceWith('<meta property="og:title" content=title>');
