@@ -194,12 +194,12 @@ function onPlayerStateChange(event) {
       player2.unMute();
       player1.mute();
     };
-document.getElementById('player2').ontouchstart = function(){
+document.getElementById('player2').ontouchstart = function() {
 player2.unmute();
 player1.mute();
 };
 
-document.getElementById('player1').ontouchstart = function(){
+document.getElementById('player1').ontouchstart = function() {
 player1.unmute();
 player2.mute();
 };
@@ -237,6 +237,7 @@ else {
 }
 
 function playVid() {
+document.getElementById('media1').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
 document.getElementById('media2').muted = true;   /* added 7/30/2020 to test single audio source at first play. */
 document.querySelectorAll("video").forEach(vid => vid.play());
 document.getElementsByTagName("video")[0].removeAttribute("controls");
