@@ -11,13 +11,18 @@ var query = window.location.search.substring(1);
 
 
 function toggleyt(button) {
-  if (button.value == "A") {
-    button.value = "B";
+   var valer = document.getElementById("myButton2").innnerHTML;
+   "New Button Text using innerHTML";
+  //if (button.value == "A") {
+       if (valer == "A") {
+    //button.value = "B";
+       valer.value = "B";
     player1.unMute();
     player2.mute();
     
   } else {
-    button.value = "A";
+    //button.value = "A
+     valer.value = "A";
     player2.unMute();
     player1.mute();
   }
