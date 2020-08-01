@@ -10,8 +10,7 @@ var query = window.location.search.substring(1);
 }
 
 
-function toggleyt(button) {
-   function toggleyt() {
+function toggleyt() {
  var valeryt = document.getElementById("togyt").innerHTML;
    if (valeryt == "A") {
        document.getElementById("togyt").innerHTML="B";
@@ -26,7 +25,8 @@ function toggleyt(button) {
 }
 
 
-function togglemp4(button) {
+function togglemp4() {
+       //function togglemp4(button){
   var valermp4 = document.getElementById("togmp4").innerHTML;
   if (valermp4 == "A") {
      document.getElementById("togmp4").innerHTML="B";
