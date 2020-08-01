@@ -9,6 +9,20 @@ var query = window.location.search.substring(1);
        return(false);
 }
 
+
+function toggle() {
+ if(document.getElementById("tog").value=="A"){ 
+document.getElementById("tog").value="B";
+player1.unMute();
+player2.mute();
+} 
+else if(document.getElementById("tog").value=="B"){ 
+document.getElementById("tog").value="A";
+player1.mute();
+player2.unMute();
+ }
+}
+
 function copyText() {
  /* Get the text field */
   var copyText = document.getElementById("invisiblediv");
