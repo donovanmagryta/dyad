@@ -250,7 +250,7 @@ document.getElementsByTagName("video")[1].removeAttribute("controls");
 }
 
 
-function unmut(e) {
+/* function unmut(e) {
        document.getElementById(e).muted = false;
        document.getElementById(e).style.border = "2px solid green";
 }
@@ -258,3 +258,24 @@ function mut(e){
        document.getElementById(e).muted = true;
        document.getElementById(e).style.border = "none";
 }
+*/
+
+document.getElementById('media1').ontouchstart = function() {
+1.unmute();
+media2.mute();
+};
+
+document.getElementById('media1').onmouseover = function() {
+media1.unmute();
+media2.mute();
+};
+
+document.getElementById('media2').ontouchstart = function() {
+media2.unmute();
+media1.mute();
+};
+
+document.getElementById('media2').onmouseover = function() {
+media2.unmute();
+media1.mute();
+};
