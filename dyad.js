@@ -127,7 +127,7 @@ jQuery(".formy").hide();
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
 var d2 = document.getElementById('button2');
-d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+d2.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:black;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
  
  
@@ -142,7 +142,7 @@ jQuery(".formy").hide();
 document.getElementById('pic1').src = media1;
 document.getElementById('pic2').src = media2;
 var d9 = document.getElementById('button3');
-d9.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+d9.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:black;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
  }
  
  
@@ -171,7 +171,7 @@ let re = /^(https?:\/\/)?((www\.)?(youtube(-nocookie)?|youtube.googleapis)\.com.
 let idone = media1.match(re)[7]; // added 7-12-2020
 let idtwo = media2.match(re)[7]; // added 7-12-2020
 var d1 = document.getElementById('button1');
-d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:#DA4336;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
+d1.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="background-color:black;margin: 4px 2px;padding: 5px 5px;color:white;border:none;border-radius:10px;text-decoration:none;" >' + buttontitle + ' </button></a>');
 // added 7-18-2020
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
