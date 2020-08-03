@@ -12,13 +12,13 @@ var query = window.location.search.substring(1);
 
 function toggleyt() {
  var valeryt = document.getElementById("togyt").innerHTML;
-   if (valeryt == "A<i class='fas fa-volume-up'></i>") {
-       document.getElementById("togyt").innerHTML="B<i class='fas fa-volume-up'></i>";
+   if (valeryt == "A<i class='fas fa-volume-up' aria-hidden='true'></i>") {
+       document.getElementById("togyt").innerHTML="B<i class='fas fa-volume-up' aria-hidden='true'></i>";
     player1.unMute();
     player2.mute();
     
   } else {
-     document.getElementById("togyt").innerHTML="A<i class='fas fa-volume-up'></i>";
+     document.getElementById("togyt").innerHTML="A<i class='fas fa-volume-up' aria-hidden='true'></i>";
     player2.unMute();
     player1.mute();
   }
