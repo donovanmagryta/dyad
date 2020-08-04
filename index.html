@@ -16,7 +16,16 @@
 <meta property="og:description" content="Override algorithmic filters, Cross promos for All, Compare perspectives side-by-side.">
 <meta property="og:image" content="https://github.com/donovanmagryta/dyad/blob/master/defaultthumbnail.jpg?raw=true">
 <link rel="icon" href="Dyad Logo.png" type="image/png">
-<style> 
+<style>
+ 
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+}
+ 
+ ::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
  
  body {
   background-color: black;
@@ -53,6 +62,8 @@
    background-color: gray;
    color: cyan;
    border: 1px solid white;
+   border-radius: 6px;
+ border-style: none;
    
    
 }
@@ -69,7 +80,7 @@ input[type=submit] {
  border-style: none;
 }
 input[type=submit]:hover {
-  background-color: green;
+  background-color: light-green;
 }
 @media screen and (orientation: portrait) {
   video {
