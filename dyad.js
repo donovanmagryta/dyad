@@ -6,10 +6,12 @@ var query = window.location.search.substring(1);
        if (varz2) {
               vars = varz2;
               alert("ampersand found");
+              alert(varz2);
        }
        if (varz) {
               vars = varz;
               alert("percent 20 AND found");
+              alert(varz);
        }
        for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
