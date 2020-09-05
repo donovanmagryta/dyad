@@ -1,7 +1,16 @@
 
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
-       var vars = query.split("&");
+       var varz = query.split("&");
+       var varz2 = query.split("%20");
+       if (varz2) {
+              vars = varz2;
+              alert("ampersand found");
+       }
+       if (varz) {
+              vars = varz;
+              alert("percent 20 AND found");
+       }
        for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
