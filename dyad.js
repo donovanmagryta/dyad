@@ -2,7 +2,7 @@
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var query = decodeURIComponent(query.replace(/\+/g, '%20') );
-       alert(query);
+       //alert(query);
        var varz = query.split("&");
        var varz2 = query.split("%20");
        var vars = varz;
@@ -81,7 +81,7 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var title = getQueryVariable("title");
 var checksubmit = getQueryVariable("submit");
-var duo = getQueryVariable("duo");
+//var duo = getQueryVariable("duo");
 
 
 //if (checksubmit) {
