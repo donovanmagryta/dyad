@@ -81,7 +81,7 @@ var buttontitle = getQueryVariable("buttontitle");
 var buttonlink = getQueryVariable("buttonlink");
 var title = getQueryVariable("title");
 var checksubmit = getQueryVariable("submit");
-//var duo = getQueryVariable("duo");
+var duo = getQueryVariable("duo");
 
 
 //if (checksubmit) {
