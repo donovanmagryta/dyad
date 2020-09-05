@@ -98,6 +98,7 @@ var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
   var lanky = btoa(lonky);
   var newlank = "https://dyad.link/?duo=" + lanky;
       // alert(newlank);
+       alert("redirecting to newlank");
 window.location = newlank;
 }
 
