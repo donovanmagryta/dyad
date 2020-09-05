@@ -2,6 +2,7 @@
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
        var query = decodeURIComponent(query.replace(/\+/g, '%20') );
+       alert(query);
        var varz = query.split("&");
        var varz2 = query.split("%20");
        var vars = varz;
