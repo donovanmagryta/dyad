@@ -1,6 +1,7 @@
-
+//error on desktop from fb maybe from spaces added 
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
+       var query = decodeURIComponent(query.replace(/\+/g, '%20') );
        var varz = query.split("&");
        var varz2 = query.split("%20");
        var vars = varz;
