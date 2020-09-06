@@ -1,11 +1,13 @@
 //error on desktop from fb maybe from spaces added 
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
-      var query = decodeURIcomponent(query.replace(/\s/g, '+'));
+      var vars = query.split("&"); 
+     /* var query = decodeURIcomponent(query.replace(/\s/g, '+'));
        //alert(query);
        var varz = query.split("&");
        var varz2 = query.split("%20");
        var vars = varz;
+       */
        /* if (varz2) {
               vars = varz2;
               alert("ampersand found");
@@ -16,6 +18,7 @@ var query = window.location.search.substring(1);
               alert("percent 20 AND found");
               alert(varz);
        }*/
+      
        for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
