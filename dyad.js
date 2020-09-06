@@ -108,8 +108,10 @@ window.location = newlank;
 }
 
 else if (duo) {
+      
        var stringy = decodeURIcomponent(duo);
-       stringy = atob(duo);
+      alert(duo);
+       var stringy = atob(duo);
        var vars = stringy.split("~");
        var media1 = vars[1];
        var media1type = vars[0];
