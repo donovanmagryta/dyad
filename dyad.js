@@ -110,9 +110,10 @@ window.location = newlank;
 else if (duo) {
       var duo = duo.replace("%20", "+");
       var duo = duo.replace("%3D", "=");
-      var stringyey = decodeURIcomponent(duo);
+      //var urlea = window.location.search.substring(1);
+      //var stringyey = decodeURIcomponent(urlea);
       //alert(duo);
-       var stringy = atob(stringyey);
+       var stringy = atob(duo);
        var vars = stringy.split("~");
        var media1 = vars[1];
        var media1type = vars[0];
