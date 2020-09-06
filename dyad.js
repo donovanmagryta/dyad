@@ -110,7 +110,7 @@ window.location = newlank;
 else if (duo) {
       var duo = duo.replace("%20", "+");
       var duo = duo.replace("%3D", "=");
-       //var stringy = decodeURIcomponent(duo);
+      var stringy = decodeURIcomponent(duo);
       //alert(duo);
        var stringy = atob(duo);
        var vars = stringy.split("~");
