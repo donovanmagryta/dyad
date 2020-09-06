@@ -1,7 +1,7 @@
 //error on desktop from fb maybe from spaces added 
 function getQueryVariable(variable) {
 var query = window.location.search.substring(1);
-      var query = query.replace("%20", "+");
+      //var query = query.replace("%20", "+");
       var vars = query.split("&"); 
      /* var query = decodeURIcomponent(query.replace(/\s/g, '+'));
        //alert(query);
@@ -101,14 +101,14 @@ var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
   //var lanke = encodeURIComponent(lonky);
   var lanky = btoa(lonky);
   var newlank = "https://dyad.link/?duo=" + lanky;
-      var newlank = newlank.replace("%20", "+"); //added 9/6/2020
+      //var newlank = newlank.replace("%20", "+"); //added 9/6/2020
       // alert(newlank);
        //alert("redirecting to newlank");
 window.location = newlank;
 }
 
 else if (duo) {
-       
+       var stringy = decodeURIcomponent(duo);
        stringy = atob(duo);
        var vars = stringy.split("~");
        var media1 = vars[1];
