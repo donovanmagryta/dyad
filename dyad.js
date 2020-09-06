@@ -109,7 +109,7 @@ window.location = newlank;
 
 else if (duo) {
       
-       var stringy = decodeURIcomponent(duo);
+       //var stringy = decodeURIcomponent(duo);
       alert(duo);
        var stringy = atob(duo);
        var vars = stringy.split("~");
