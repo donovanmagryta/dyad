@@ -112,7 +112,7 @@ else if (duo) {
       var duo = duo.replaceAll("%3D", "=");
       //var urlea = window.location.search.substring(1);
       //var stringyey = decodeURIcomponent(urlea);
-      alert(duo);
+     // alert(duo);
        var stringy = atob(duo);
        var vars = stringy.split("~");
        var media1 = vars[1];
