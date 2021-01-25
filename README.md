@@ -1,3 +1,6 @@
+Untested on Apple devices as of 1/25/2021.
+
+Settings and media are stored in each URL itself, not on the server. The webpage simply renders the settings and media links encoded in the URL
 
 
 | WINDOWS 10         | Chrome | FireFox | Edge | Safari |
