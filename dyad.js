@@ -30,7 +30,7 @@ var query = window.location.search.substring(1);
 
 function toggleyt() {
  var valeryt = document.getElementById("togyt").innerHTML;
-   if (valeryt == 'A<i class="fas fa-volume-up" aria-hidden="true"></i>') {
+   if (valeryt == 'A🔊') {
        document.getElementById("togyt").innerHTML='B🔊';
     player1.unMute();
     player2.mute();
