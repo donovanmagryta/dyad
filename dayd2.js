@@ -358,7 +358,7 @@ media1.muted = true;
 
 */
       
-    var copyButton = document.getElementById('invisiblediv');  
+    var copyButton = document.getElementById('sharebtn');  
        copyButton.addEventListener('click', function() {
     if (navigator.share) {
         navigator.share({
