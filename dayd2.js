@@ -91,6 +91,7 @@ var duo = getQueryVariable("duo");
 //if (checksubmit) {
        
 if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink && title) {
+      if ( media1 && media2 && media1type && buttontitle && buttonlink && title) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
@@ -143,10 +144,12 @@ var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
  if (media1type == "video") {
         //alert("case 1 mp4");
 jQuery(document).ready(function(){
-jQuery(".formy").hide();
- jQuery(".medy").show();
- jQuery(".yt").hide();
- jQuery(".pic").hide();
+      
+//jQuery(".formy").hide();
+ //jQuery(".medy").show();
+ //jQuery(".yt").hide();
+ //jQuery(".pic").hide();
+      
  });
 document.getElementById('media1').src = media1;
 document.getElementById('media2').src = media2;
@@ -173,10 +176,10 @@ d9.insertAdjacentHTML('afterend', '<a href="'+ buttonlink +'"><button style="bac
 else if (media1type == "youtube") {
 //alert("case 2 youtube");
 jQuery(document).ready(function(){
-jQuery(".formy").hide();
- jQuery(".medy").hide();
- jQuery(".yt").show();
- jQuery(".pic").hide();
+//jQuery(".formy").hide();
+ //jQuery(".medy").hide();
+ //jQuery(".yt").show();
+ //jQuery(".pic").hide();
  });
  
  function metAhh() { 
@@ -291,10 +294,10 @@ function onPlayerReady(event) {
        
 else {
  jQuery(document).ready(function(){
- jQuery(".formy").show();
- jQuery(".medy").hide();
- jQuery(".yt").hide();
- jQuery(".pic").hide();
+ //jQuery(".formy").show();
+ //jQuery(".medy").hide();
+ //jQuery(".yt").hide();
+ //jQuery(".pic").hide();
   });
  //alert("case 3");
 }
