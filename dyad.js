@@ -355,7 +355,7 @@ media1.muted = true;
 
 */
 
-  
+  /*
     var copyButton = document.getElementById('sharebtn');  
        copyButton.addEventListener('click', function() {
     if (navigator.share) {
@@ -370,3 +370,4 @@ media1.muted = true;
         shareDialog.classList.add('is-open');
       }
        }, false);
+       */
