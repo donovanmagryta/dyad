@@ -61,7 +61,7 @@ function togglemp4() {
 
 function copyText() {
   
-        navigator.share({title: document.title, text: window.location.href, url: window.location.href})
+        navigator.share({title: document.title, text: "Check out these videos", url: window.location.href})
           
 }
  /*
