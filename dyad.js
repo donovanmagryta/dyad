@@ -355,13 +355,14 @@ media1.muted = true;
 
 */
 
-  /*
+  
+  var copyText = document.getElementById("invisiblediv");
     var copyButton = document.getElementById('sharebtn');  
        copyButton.addEventListener('click', function() {
     if (navigator.share) {
         navigator.share({
           title: title,
-          url: window.location.href
+          url: copyText
         }).then(() => {
           //console.log('Thanks for sharing!');
         })
