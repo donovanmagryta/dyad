@@ -91,7 +91,7 @@ var duo = getQueryVariable("duo");
 //if (checksubmit) {
        
 if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink && title) {
-     // if ( media1 && media2 && media1type && buttontitle && buttonlink && title) {
+      if ( media1 && media2 && media1type && buttontitle && buttonlink && title) {
 var media1 = decodeURIComponent(media1.replace(/\+/g, '%20') );
 var media2 = decodeURIComponent(media2.replace(/\+/g, '%20') );
 var buttonlink = decodeURIComponent(buttonlink.replace(/\+/g, '%20') );
