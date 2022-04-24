@@ -355,20 +355,4 @@ media1.muted = true;
 
 */
 
-  
-  var copyText = document.getElementById("invisiblediv");
-    var copyButton = document.getElementById('sharebtn');  
-       copyButton.addEventListener('click', function() {
-    if (navigator.share) {
-        navigator.share({
-          title: title,
-          url: copyText
-        }).then(() => {
-          //console.log('Thanks for sharing!');
-        })
-        .catch(console.error);
-      } else {
-        shareDialog.classList.add('is-open');
-      }
-       }, false);
-       */
+ 
