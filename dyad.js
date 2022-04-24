@@ -369,3 +369,4 @@ media1.muted = true;
       } else {
         shareDialog.classList.add('is-open');
       }
+       }
