@@ -354,3 +354,18 @@ media1.muted = true;
 };
 
 */
+
+  
+    var copyButton = document.getElementById('sharebtn');  
+       copyButton.addEventListener('click', function() {
+    if (navigator.share) {
+        navigator.share({
+          title: title,
+          url: window.location.href
+        }).then(() => {
+          //console.log('Thanks for sharing!');
+        })
+        .catch(console.error);
+      } else {
+        shareDialog.classList.add('is-open');
+      }
