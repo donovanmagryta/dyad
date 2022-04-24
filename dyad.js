@@ -100,7 +100,7 @@ var buttontitle = decodeURIComponent(buttontitle.replace(/\+/g, '%20') );
  var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "~" + title;
   //var lanke = encodeURIComponent(lonky);
   var lanky = btoa(lonky);
-  var newlank = "https://dyad.link/index2b.html/?duo=" + lanky;
+  var newlank = "https://dyad.link/?duo=" + lanky;
       //var newlank = deceodeURIcomponent(newlank); //added 9/6/2020
       // alert(newlank);
       // alert("redirecting to newlank");
