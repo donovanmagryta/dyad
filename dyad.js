@@ -60,14 +60,25 @@ function togglemp4() {
 
 
 function copyText() {
- /* Get the text field */
+      if(navigator.share !== undefined) {
+    document.addEventListener('DOMContentLoaded', e => {
+      var shareBton = document.getElementById(sharebtn);
+      shareBton.addEventListener('click', clickEvent => {
+        clickEvent.preventDefault();
+        navigator.share({title: document.title, text: window.location.href, url: window.location.href})
+          .then(() => console.log('Successful share'),
+           error => console.log('Error sharing:', error));
+      });
+    });
+}
+ /*
   var copyText = document.getElementById("invisiblediv");
 copyText.type = 'text';
 copyText.select();
 document.execCommand("copy");
 copyText.type = 'hidden';
-  /* Alert the copied text */
   alert("Link copied. Share away!");
+      */
   }
 
 /* var fb = document.getElementById('fb');
