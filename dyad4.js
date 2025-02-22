@@ -70,7 +70,7 @@ if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink &
 
     var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "~" + title;
     var lanky = btoa(lonky);
-    var newlank = "https://dyad.link/duo/" + lanky;
+    var newlank = "https://donovanmagryta.github.io/dyad/duo/" + lanky;
     window.location = newlank; // Redirect to path-based URL
 }
 // Handle loading from duo path
