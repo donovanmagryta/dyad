@@ -60,7 +60,7 @@ if (checksubmit && media1 && media2 && media1type && buttontitle && buttonlink &
 
     var lonky = media1type + "~" + media1 + "~" + media2 + "~" + buttonlink + "~" + buttontitle + "~" + title;
     var lanky = btoa(lonky);
-    var newlank = "https://dyad.link/duo/" + lanky; // Use path instead of query
+    var newlank = "https://donovanmagryta.github.io/dyad/duo/" + lanky; // Use path instead of query
     window.location = newlank; // Redirect to new path-based URL
 }
 
