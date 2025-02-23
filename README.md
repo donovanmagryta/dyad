@@ -1,5 +1,5 @@
 Untested on Apple devices as of 1/25/2021.
-Lost track of which version is functioning!
+Bugs: Some social media shares strip part of the URL out, breaking functionality.
 
 Settings and media embeds are stored in each URL itself, not on the server. The webpage simply renders the settings and media links encoded in the URL
 
