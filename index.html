@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <head>
  <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script>
+ window.onload = function() {
+  if (sessionStorage.getItem('reloaded') !== 'true') {
+    sessionStorage.setItem('reloaded', 'true');
+    location.reload();
+  }
+}
+</script>
 
  <meta charset="windows-1252">
  <title>Dyad - A better way to share content</title>
