@@ -1,9 +1,12 @@
 // Function to extract duo from path
 function getPathVariable() {
-    var path = window.location.pathname.substring(1); // Remove leading "/"
+    //var path = window.location.pathname.substring(1); // Remove leading "/"
+    const path = window.location.hash.split('/')[2];
+    console.log(path);
     var segments = path.split("/"); // Split path into segments
     if (segments[0] === "duo" && segments.length > 1) {
         return segments[1]; // Return the value after "/duo/"
+        console.log(segments);
     }
     return false;
 }
